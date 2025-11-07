@@ -173,6 +173,10 @@
         border: 1px solid var(--border-color);
         background-color: #f0f0f0;
       }
+      
+      .video-grid-landscape video {
+        aspect-ratio: 16 / 9;
+      }
 
       .video-title {
         text-align: center;
@@ -299,6 +303,50 @@
         <p class="video-title">Ray Reflection (Correct)</p>
       </div>
     </div>
+    <!-- Visual Puzzles Section -->
+    <h2 class="section-header">Visual Puzzles</h2>
+    <div class="video-grid video-grid-landscape">
+      <div class="video-wrapper">
+        <video loading="lazy" playsinline controls src="mp4/visual_puzzle_color_hexagon.mp4"></video>
+        <p class="video-title">Hexagon Color Pattern Match (Correct)</p>
+      </div>
+      <div class="video-wrapper">
+        <video loading="lazy" playsinline controls src="mp4/visual_puzzle_color_grid.mp4"></video>
+        <p class="video-title">Grid Color Pattern Match (Correct)</p>
+      </div>
+      <div class="video-wrapper">
+        <video loading="lazy" playsinline controls src="mp4/visual_puzzle_polygon_sides_color.mp4"></video>
+        <p class="video-title">Shape Color Pattern Match (Correct)</p>
+      </div>
+      <div class="video-wrapper">
+        <video loading="lazy" playsinline controls src="mp4/visual_puzzle_rectangle_height_color.mp4"></video>
+        <p class="video-title">Rectangle Height Color Match (Correct)</p>
+      </div>
+      <div class="video-wrapper">
+        <video loading="lazy" playsinline controls src="mp4/visual_puzzle_color_overlap_squares.mp4"></video>
+        <p class="video-title">Color Mixing Perception & Application (Correct)</p>
+      </div>
+      <div class="video-wrapper">
+        <video loading="lazy" playsinline controls src="mp4/visual_puzzle_color_size.mp4"></video>
+        <p class="video-title">Color Gradient Perception & Application (Correct)</p>
+      </div>
+      <div class="video-wrapper">
+        <video loading="lazy" playsinline controls src="mp4/visual_puzzle_size_grid.mp4"></video>
+        <p class="video-title">Grid Size Pattern Match (Correct)</p>
+      </div>
+      <div class="video-wrapper">
+        <video loading="lazy" playsinline controls src="mp4/visual_puzzle_size_cycle.mp4"></video>
+        <p class="video-title">Cycle Size Pattern Match (Correct)</p>
+      </div>
+      <div class="video-wrapper">
+        <video loading="lazy" playsinline controls src="mp4/visual_puzzle_shape_size_grid.mp4"></video>
+        <p class="video-title">Grid Shape & Size Pattern Match (Correct)</p>
+      </div>
+      <div class="video-wrapper">
+        <video loading="lazy" playsinline controls src="mp4/visual_puzzle_shape_reflect.mp4"></video>
+        <p class="video-title">Reflection Recognition & Application (Correct)</p>
+      </div>
+    </div>
 
     <!-- ARC-AGI-2 Section -->
     <h2 class="section-header">ARC-AGI-2</h2>
@@ -332,13 +380,13 @@
 
     <!-- GSM8K Section -->
     <h2 class="section-header">GSM8K</h2>
-    <div class="video-grid">
+    <div class="video-grid video-grid-landscape">
         <div class="video-wrapper" title='Solve the problem step by step on the given whiteboard. Give the final answer by writing \"The answer is ... (final answer)\". No oral explanation was provided during the written process of solving the problem, but the final answer was stated orally in the end.\n\nProblem:\nJames buys a plane.  The plane cost $150,000.  He pays $5000 a month to rent a hanger to keep it in.  He also spends twice as much as that on fuel per month.  How much did it cost him to get and maintain the plane for the first year?'>
-            <video loading="lazy" muted playsinline controls src="mp4/gsm8k_cr1.mp4"></video>
+            <video loading="lazy" playsinline controls src="mp4/gsm8k_cr1.mp4"></video>
             <p class="video-title">GSM8K (Correct)</p>
         </div>
         <div class="video-wrapper" title='Solve the problem step by step on the given whiteboard. Give the final answer by writing \"The answer is ... (final answer)\". No oral explanation was provided during the written process of solving the problem, but the final answer was stated orally in the end.\n\nProblem:\nMary and John got married last weekend.  There were 20 private cars and 12 buses parked outside the church.  After the ceremony, each bus carried 35 people and each car carried 3 people. How many people were inside the church?'>
-            <video loading="lazy" muted playsinline controls src="mp4/gsm8k_cr2.mp4"></video>
+            <video loading="lazy" playsinline controls src="mp4/gsm8k_cr2.mp4"></video>
             <p class="video-title">GSM8K (Correct)</p>
         </div>
     </div>
