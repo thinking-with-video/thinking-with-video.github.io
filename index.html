@@ -14,6 +14,12 @@
     <!-- <meta property="og:image" content="https://sora-reasoner.github.io/assets/preview.png" /> -->
     <!-- <meta property="og:url" content="https://sora-reasoner.github.io/" /> -->
     <meta property="og:type" content="website" />
+    
+    <!-- Import FontAwesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
     <style>
       :root {
@@ -87,6 +93,35 @@
         display: block;
         margin-top: 0.9rem;
         text-align: center;
+      }
+      
+      .button-wrapper {
+        margin: 2rem auto;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .btn-link {
+        display: flex;
+        align-items: center;
+        background: var(--text-primary);
+        color: var(--background-primary);
+        text-decoration: none;
+        border-radius: 9999px;
+        padding: 0.5rem 1rem;
+        transition: background 0.2s ease-in-out;
+        font-weight: 500;
+        border: none;
+      }
+
+      .btn-link:hover {
+        background: var(--link-color);
+      }
+
+      .btn-link i {
+        margin-right: 0.5rem;
       }
 
       .text-section {
@@ -190,6 +225,18 @@
             * Equal contribution&nbsp;&nbsp;&nbsp;† Corresponding authors
         </div>
       </header>
+
+      <div class="button-wrapper">
+        <a class="btn-link" href="https://arxiv.org/abs/2511.04570" target="_blank" rel="noopener noreferrer">
+          <i class="fa-regular fa-file-alt"></i>Paper
+        </a>
+        <a class="btn-link" href="https://arxiv.org/pdf/2511.04570" target="_blank" rel="noopener noreferrer">
+          <i class="fa-regular fa-file-pdf"></i>PDF
+        </a>
+        <a class="btn-link" href="https://github.com/tongjingqi/Thinking-with-Video" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>GitHub
+        </a>
+      </div>
 
       <div class="text-section">
         <h2>TL;DR</h2>
