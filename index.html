@@ -74,7 +74,7 @@
       .affiliations {
         color: var(--text-secondary);
         margin-top: 1.25rem;
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
 
       .affiliations sup {
@@ -85,14 +85,20 @@
         font-size: 0.9rem;
         color: var(--text-secondary);
         display: block;
-        margin-top: 1rem;
-        text-align: left;
+        margin-top: 0.9rem;
+        text-align: center;
       }
 
       .text-section {
         margin: 2rem 0;
         padding: 0 1rem;
         text-align: justify;
+      }
+
+      .text-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
       }
 
       .text-section p {
@@ -186,8 +192,22 @@
       </header>
 
       <div class="text-section">
+        <h2>TL;DR</h2>
         <p>
-            Still WIP!
+          Existing reasoning paradigms like "Thinking with Text" and "Thinking with Images" are limited by static images and separate modalities. We introduce "Thinking with Video," a new paradigm leveraging video generation models (e.g., Sora-2) for unified multimodal reasoning. Our <strong>VideoThinkBench</strong> shows Sora-2 excels at both vision-centric tasks (surpassing some VLMs) and text-centric tasks, positioning video generation as a powerful, unified foundation for reasoning.
+        </p>
+      </div>
+
+      <div class="text-section">
+        <h2>Abstract</h2>
+        <p>
+          "Thinking with Text" and "Thinking with Images" paradigm significantly improve the reasoning ability of large language models (LLMs) and Vision Language Models (VLMs). However, these paradigms have inherent limitations. (1) Images capture only <strong>single moments</strong> and fail to represent dynamic processes or continuous changes, and (2) The separation of <strong>text and vision as distinct modalities</strong>, hindering unified multimodal understanding and generation. To overcome these limitations, we introduce "Thinking with Video", a new paradigm that leverages video generation models, such as Sora-2, to bridge visual and textual reasoning in a unified temporal framework. To support this exploration, we developed the Video Thinking Benchmark (<strong>VideoThinkBench</strong>). VideoThinkBench encompasses two task categories: (1) vision-centric tasks (e.g., Eyeballing Puzzles), and (2) text-centric tasks (e.g., subsets of GSM8K, MMMU).
+        </p>
+        <p>
+          Our evaluation establishes Sora-2 as a capable reasoner. On vision-centric tasks, Sora-2 is generally comparable to state-of-the-art (SOTA) VLMs, and even <strong>surpasses VLMs</strong> on several tasks, such as Eyeballing Puzzles. On text-centric tasks, Sora-2 achieves <strong>92%</strong> accuracy on MATH, and <strong>69.2%</strong> accuracy on MMMU. Furthermore, we systematically analyse the source of these abilities. We also find that <strong>self-consistency</strong> and <strong>in-context learning</strong> can improve Sora-2’s performance.
+        </p>
+        <p>
+          In summary, our findings demonstrate that the video generation model is the potential unified multimodal understanding and generation model, positioning "Thinking with Video" as a <strong>unified multimodal reasoning paradigm</strong>.
         </p>
       </div>
     </div>
