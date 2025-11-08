@@ -85,6 +85,25 @@
         transform: scale(1.05);
       }
 
+      .small-logo-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 0;
+      }
+
+      .small-logo-container img {
+        height: 40px;
+        width: auto;
+        object-fit: contain;
+        opacity: 0.6;
+        transition: opacity 0.3s ease;
+      }
+
+      .small-logo-container img:hover {
+        opacity: 0.9;
+      }
+
       @keyframes fadeInDown {
         from {
           opacity: 0;
@@ -352,6 +371,74 @@
         margin-left: 0.5rem;
       }
 
+      .bibtex-section {
+        margin: 4rem auto 2rem;
+        max-width: 900px;
+        padding: 0 1rem;
+      }
+
+      .bibtex-header {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        text-align: center;
+        color: var(--text-primary);
+      }
+
+      .bibtex-container {
+        position: relative;
+        background: #f7fafc;
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin: 0 auto;
+        max-width: 100%;
+        overflow-x: auto;
+      }
+
+      .bibtex-copy-btn {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        padding: 0.5rem 0.75rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.85rem;
+        color: var(--text-primary);
+      }
+
+      .bibtex-copy-btn:hover {
+        background: #fff;
+        border-color: var(--accent-color);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .bibtex-copy-btn:active {
+        transform: scale(0.95);
+      }
+
+      .bibtex-code {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 0.9rem;
+        line-height: 1.6;
+        color: var(--text-primary);
+        white-space: pre;
+        margin: 0;
+        padding-right: 4rem;
+      }
+
+      .bibtex-copied {
+        background: var(--accent-color) !important;
+        color: #fff !important;
+        border-color: var(--accent-color) !important;
+      }
+
       footer {
         margin-top: 5rem;
         padding: 3rem 1rem;
@@ -409,41 +496,47 @@
 
       @media (max-width: 900px) {
         .video-grid { grid-template-columns: repeat(3, 1fr); }
-        .logo-container img { height: 90px; }
         .footer-logo img { height: 55px; }
+        .small-logo-container img { height: 35px; }
       }
       
       @media (max-width: 768px) {
         h1 { font-size: 2rem; }
         .video-grid { grid-template-columns: repeat(2, 1fr); }
         .text-section { padding: 1.5rem; }
-        .logo-container img { height: 80px; }
         .footer-logo img { height: 50px; }
+        .small-logo-container img { height: 32px; }
         .section-header { font-size: 1.75rem; }
         .main-picture-wrapper { margin: 2.5rem auto; }
         .main-picture { border-radius: 12px; }
+        .bibtex-header { font-size: 1.3rem; }
+        .bibtex-container { padding: 1rem; }
+        .bibtex-code { font-size: 0.8rem; padding-right: 3.5rem; }
+        .bibtex-copy-btn { top: 0.75rem; right: 0.75rem; padding: 0.4rem 0.6rem; font-size: 0.8rem; }
       }
 
       @media (max-width: 480px) {
         .video-grid { grid-template-columns: 1fr; }
         h1 { font-size: 1.6rem; }
         .text-section { padding: 1rem; }
-        .logo-container img { height: 70px; }
         .footer-logo img { height: 45px; }
+        .small-logo-container img { height: 28px; }
         .section-header { font-size: 1.5rem; }
         .button-wrapper { gap: 0.75rem; }
         .btn-link { padding: 0.55rem 1.2rem; font-size: 0.9rem; }
         .main-picture-wrapper { margin: 2rem auto; }
         .main-picture { border-radius: 8px; }
+        .bibtex-header { font-size: 1.2rem; }
+        .bibtex-container { padding: 0.75rem; }
+        .bibtex-code { font-size: 0.75rem; padding-right: 3rem; line-height: 1.5; }
+        .bibtex-copy-btn { top: 0.5rem; right: 0.5rem; padding: 0.35rem 0.5rem; font-size: 0.75rem; }
+        .bibtex-copy-btn span { display: none; }
       }
     </style>
   </head>
   <body>
     <div class="content-wrapper">
       <header>
-        <div class="logo-container">
-          <img src="assets/OpenMOSS_logo.png" alt="OpenMOSS Logo">
-        </div>
         <h1>Thinking with Video: Video Generation as a Promising Multimodal Reasoning Paradigm</h1>
         <div class="authors">
           <span>Jingqi Tong<sup>1,2,*</sup></span>,
@@ -468,7 +561,10 @@
           <sup>4</sup>The Chinese University of Hong Kong
         </div>
         <div class="symbol-note">
-            * Equal contribution&nbsp;&nbsp;&nbsp;† Corresponding authors
+            * Core contribution&nbsp;&nbsp;&nbsp;† Corresponding authors
+        </div>
+        <div class="small-logo-container">
+          <img src="assets/OpenMOSS_logo.png" alt="OpenMOSS Logo">
         </div>
       </header>
 
@@ -487,15 +583,15 @@
         </a>
       </div>
 
-      <div class="main-picture-wrapper">
-        <img src="assets/main_picture.png" alt="Thinking with Video - Research Overview" class="main-picture">
-      </div>
-
       <div class="text-section">
         <h2>TL;DR</h2>
         <p>
-          Existing reasoning paradigms like "Thinking with Text" and "Thinking with Images" are limited by static images and separate modalities. We introduce "Thinking with Video," a new paradigm leveraging video generation models (e.g., Sora-2) for unified multimodal reasoning. Our <strong>VideoThinkBench</strong> shows Sora-2 excels at both vision-centric tasks (surpassing some VLMs) and text-centric tasks, positioning video generation as a powerful, unified foundation for reasoning.
+          Existing reasoning paradigms like "Thinking with Text" and "Thinking with Images" are limited by static images and separate modalities. We introduce <strong>"Thinking with Video"</strong>, a new paradigm leveraging video generation models (e.g., Sora-2) for unified multimodal reasoning. Our <strong>VideoThinkBench</strong> shows Sora-2 surprising performance at both vision-centric tasks (surpassing GPT5 10% on eyeballing puzzles) and text-centric tasks (75% accuracy on MMMU), positioning video generation as a promising multimodal reasoning paradigm.
         </p>
+      </div>
+
+      <div class="main-picture-wrapper">
+        <img src="assets/main_picture.png" alt="Thinking with Video - Research Overview" class="main-picture">
       </div>
 
       <div class="text-section">
@@ -740,6 +836,26 @@
         <p class="video-title">Circle Maze (Wrong)</p>
       </div>
     </div>
+
+    <!-- BibTeX Section -->
+    <div class="bibtex-section">
+      <h2 class="bibtex-header">BibTeX</h2>
+      <div class="bibtex-container">
+        <button class="bibtex-copy-btn" id="bibtex-copy-btn" onclick="copyBibtex()">
+          <i class="fa-regular fa-copy"></i>
+          <span id="bibtex-copy-text">Copy</span>
+        </button>
+        <pre class="bibtex-code" id="bibtex-code">@misc{tong2025thinkingvideovideogeneration,
+      title={Thinking with Video: Video Generation as a Promising Multimodal Reasoning Paradigm}, 
+      author={Jingqi Tong and Yurong Mou and Hangcheng Li and Mingzhe Li and Yongzhuo Yang and Ming Zhang and Qiguang Chen and Tianyi Liang and Xiaomeng Hu and Yining Zheng and Xinchi Chen and Jun Zhao and Xuanjing Huang and Xipeng Qiu},
+      year={2025},
+      eprint={2511.04570},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2511.04570}, 
+}</pre>
+      </div>
+    </div>
     
     <footer>
       <div class="footer-logo">
@@ -774,6 +890,43 @@
             failureArrow.textContent = '▶';
           }
         });
+
+        function copyBibtex() {
+          const bibtexCode = document.getElementById('bibtex-code').textContent;
+          const copyBtn = document.getElementById('bibtex-copy-btn');
+          const copyText = document.getElementById('bibtex-copy-text');
+          
+          navigator.clipboard.writeText(bibtexCode).then(() => {
+            copyBtn.classList.add('bibtex-copied');
+            copyText.textContent = 'Copied!';
+            
+            setTimeout(() => {
+              copyBtn.classList.remove('bibtex-copied');
+              copyText.textContent = 'Copy';
+            }, 2000);
+          }).catch(err => {
+            console.error('Failed to copy:', err);
+            // Fallback for older browsers
+            const textArea = document.createElement('textarea');
+            textArea.value = bibtexCode;
+            textArea.style.position = 'fixed';
+            textArea.style.opacity = '0';
+            document.body.appendChild(textArea);
+            textArea.select();
+            try {
+              document.execCommand('copy');
+              copyBtn.classList.add('bibtex-copied');
+              copyText.textContent = 'Copied!';
+              setTimeout(() => {
+                copyBtn.classList.remove('bibtex-copied');
+                copyText.textContent = 'Copy';
+              }, 2000);
+            } catch (err) {
+              console.error('Fallback copy failed:', err);
+            }
+            document.body.removeChild(textArea);
+          });
+        }
     </script>
     
   </body>
