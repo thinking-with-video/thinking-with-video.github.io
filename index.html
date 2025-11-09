@@ -234,6 +234,23 @@
         transform: scale(1.1);
       }
 
+      .hf-badge-wrapper {
+        display: flex;
+        justify-content: center;
+        margin: 1.5rem auto 0;
+        padding: 0 1rem;
+      }
+
+      .hf-badge-wrapper img {
+        height: 28px;
+        width: auto;
+        transition: opacity 0.3s ease;
+      }
+
+      .hf-badge-wrapper img:hover {
+        opacity: 0.8;
+      }
+
       .text-section {
         margin: 2.5rem 0;
         padding: 2rem;
@@ -772,6 +789,12 @@
         </a>
         <a class="btn-link" href="https://huggingface.co/papers/2511.04570" target="_blank" rel="noopener noreferrer">
           <span style="margin-right: 0.5rem;">🤗</span>Daily Paper
+        </a>
+      </div>
+
+      <div class="hf-badge-wrapper">
+        <a href="https://huggingface.co/papers/2511.04570" target="_blank" rel="noopener noreferrer">
+          <img src="assets/huggingface_paper_blue_aligned.svg" alt="Hugging Face Paper">
         </a>
       </div>
 
