@@ -570,6 +570,53 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
+      }
+
+      .showcase-video-item[data-title]::before {
+        content: attr(data-title);
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-8px);
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        white-space: pre-wrap;
+        min-width: 110%;
+        max-width: 400px;
+        text-align: left;
+        line-height: 1.4;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.15s ease-in;
+        z-index: 1000;
+      }
+
+      .showcase-video-item[data-title]:hover::before {
+        opacity: 1;
+        transition-delay: 0.3s;
+      }
+
+      .showcase-video-item[data-title]::after {
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-2px);
+        border: 6px solid transparent;
+        border-top-color: rgba(0, 0, 0, 0.9);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.15s ease-in;
+        z-index: 1000;
+      }
+
+      .showcase-video-item[data-title]:hover::after {
+        opacity: 1;
+        transition-delay: 0.3s;
       }
 
       .showcase-video-title {
@@ -720,13 +767,16 @@
       <div class="showcase-videos-section">
         <!-- First Row: Landscape Videos -->
         <div class="showcase-row showcase-row-landscape">
-          <div class="showcase-video-item">
+          <div class="showcase-video-item" data-title='Solve the problem step by step on the given whiteboard. Give the final answer by writing "The answer is ... (final answer)". No oral explanation was provided during the written process of solving the problem, but the final answer was stated orally in the end.
+
+Problem:
+James buys a plane.  The plane cost $150,000.  He pays $5000 a month to rent a hanger to keep it in.  He also spends twice as much as that on fuel per month.  How much did it cost him to get and maintain the plane for the first year?'>
             <div class="showcase-video-title">GSM8K</div>
             <video autoplay loop muted playsinline>
               <source src="mp4/gsm8k_cr1.mp4" type="video/mp4">
             </video>
           </div>
-          <div class="showcase-video-item">
+          <div class="showcase-video-item" data-title="What is the size of the missing part denoted with a question mark? This part should be replaced with the correct circle while the other circles should be unchanged. The question mark disappears. Then nothing happens and the scene remains static. Do not zoom in or out, or change the positions of the shapes.">
             <div class="showcase-video-title">Visual Puzzles</div>
             <video autoplay loop muted playsinline>
               <source src="mp4/visual_puzzle_size_grid.mp4" type="video/mp4">
@@ -736,19 +786,19 @@
 
         <!-- Second Row: Portrait Videos -->
         <div class="showcase-row showcase-row-portrait">
-          <div class="showcase-video-item">
+          <div class="showcase-video-item" data-title="Draw the ray of light starting from the small circle and reflecting off the line in black. Speak out which option the reflected ray will pass through using phonetic alphabet and mark it red. In portrait, no zoom, no pan.">
             <div class="showcase-video-title">Ray Intersection</div>
             <video autoplay loop muted playsinline>
               <source src="mp4/ray_reflect-cr1.mp4" type="video/mp4">
             </video>
           </div>
-          <div class="showcase-video-item">
+          <div class="showcase-video-item" data-title="Each row contains input and output grids. Learn the pattern and generate the output grid for the last input while keeping existing patterns without modification. Static camera perspective, no zoom or pan. In portrait.">
             <div class="showcase-video-title">ARC-AGI-2</div>
             <video autoplay loop muted playsinline>
               <source src="mp4/arcagi2-main.mp4" type="video/mp4">
             </video>
           </div>
-          <div class="showcase-video-item">
+          <div class="showcase-video-item" data-title="Draw a red path connecting two red dots without touching the black walls. In portrait. Static camera.">
             <div class="showcase-video-title">Maze</div>
             <video autoplay loop muted playsinline>
               <source src="mp4/maze_cr1.mp4" type="video/mp4">
