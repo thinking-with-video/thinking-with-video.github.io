@@ -546,6 +546,48 @@
         line-height: 1.6;
       }
 
+      .showcase-videos-section {
+        max-width: 900px;
+        margin: 3rem auto 3rem;
+        padding: 0 1rem;
+      }
+
+      .showcase-row {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+        justify-content: center;
+      }
+
+      .showcase-video-item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .showcase-video-title {
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--text-primary);
+        margin-bottom: 8px;
+        text-align: center;
+      }
+
+      .showcase-video-item video {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .showcase-row-landscape .showcase-video-item video {
+        aspect-ratio: 16 / 9;
+      }
+
+      .showcase-row-portrait .showcase-video-item video {
+        aspect-ratio: 9 / 16;
+      }
+
       .main-picture-wrapper {
         margin: 3rem auto 3rem;
         padding: 0 1rem;
@@ -666,6 +708,47 @@
         <p>
           We introduce <strong>'Thinking with Video'</strong>, a new paradigm leveraging video generation for multimodal reasoning. Our VideoThinkBench shows that Sora-2 surpasses GPT5 by 10% on eyeballing puzzles and reaches 75% accuracy on MMMU.
         </p>
+      </div>
+
+      <!-- Showcase Videos Section -->
+      <div class="showcase-videos-section">
+        <!-- First Row: Landscape Videos -->
+        <div class="showcase-row showcase-row-landscape">
+          <div class="showcase-video-item">
+            <div class="showcase-video-title">GSM8K</div>
+            <video autoplay loop muted playsinline>
+              <source src="mp4/gsm8k_cr1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="showcase-video-item">
+            <div class="showcase-video-title">Visual Puzzles</div>
+            <video autoplay loop muted playsinline>
+              <source src="mp4/visual_puzzle_size_grid.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <!-- Second Row: Portrait Videos -->
+        <div class="showcase-row showcase-row-portrait">
+          <div class="showcase-video-item">
+            <div class="showcase-video-title">Ray Intersection</div>
+            <video autoplay loop muted playsinline>
+              <source src="mp4/ray_reflect-cr1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="showcase-video-item">
+            <div class="showcase-video-title">ARC-AGI-2</div>
+            <video autoplay loop muted playsinline>
+              <source src="mp4/arcagi2-main.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="showcase-video-item">
+            <div class="showcase-video-title">Maze</div>
+            <video autoplay loop muted playsinline>
+              <source src="mp4/maze_cr1.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
       </div>
 
       <div class="main-picture-wrapper">
