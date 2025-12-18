@@ -8,12 +8,12 @@ function generateVideoGenTable() {
           <td class="js-sort-number"><strong>#</strong></td>
           <td class="js-sort"><strong>Model</strong></td>
           <td class="js-sort-number"><strong><u>Average</u></strong></td>
-          <td class="js-sort-number"><strong>Eyeballing<br>Point</strong></td>
-          <td class="js-sort-number"><strong>Eyeballing<br>Line</strong></td>
-          <td class="js-sort-number"><strong>Eyeballing<br>Shape</strong></td>
-          <td class="js-sort-number"><strong>Visual<br>Symmetry</strong></td>
-          <td class="js-sort-number"><strong>Visual<br>Gradient</strong></td>
-          <td class="js-sort-number"><strong>Visual<br>Compositionality</strong></td>
+          <td class="js-sort-number"><strong>Eyeballing Point</strong></td>
+          <td class="js-sort-number"><strong>Eyeballing Line</strong></td>
+          <td class="js-sort-number"><strong>Eyeballing Shape</strong></td>
+          <td class="js-sort-number"><strong>Visual Symmetry</strong></td>
+          <td class="js-sort-number"><strong>Visual Gradient</strong></td>
+          <td class="js-sort-number"><strong>Visual Compositionality</strong></td>
           <td class="js-sort-number"><strong>ARC-AGI-2</strong></td>
       </tr></thead><tbody>`;
 
@@ -59,12 +59,12 @@ function generateVisionLangTable() {
           <td class="js-sort-number"><strong>#</strong></td>
           <td class="js-sort"><strong>Model</strong></td>
           <td class="js-sort-number"><strong><u>Average</u></strong></td>
-          <td class="js-sort-number"><strong>Eyeballing<br>Point</strong></td>
-          <td class="js-sort-number"><strong>Eyeballing<br>Line</strong></td>
-          <td class="js-sort-number"><strong>Eyeballing<br>Shape</strong></td>
-          <td class="js-sort-number"><strong>Visual<br>Symmetry</strong></td>
-          <td class="js-sort-number"><strong>Visual<br>Gradient</strong></td>
-          <td class="js-sort-number"><strong>Visual<br>Compositionality</strong></td>
+          <td class="js-sort-number"><strong>Eyeballing Point</strong></td>
+          <td class="js-sort-number"><strong>Eyeballing Line</strong></td>
+          <td class="js-sort-number"><strong>Eyeballing Shape</strong></td>
+          <td class="js-sort-number"><strong>Visual Symmetry</strong></td>
+          <td class="js-sort-number"><strong>Visual Gradient</strong></td>
+          <td class="js-sort-number"><strong>Visual Compositionality</strong></td>
           <td class="js-sort-number"><strong>ARC-AGI-2</strong></td>
       </tr></thead><tbody>`;
 
