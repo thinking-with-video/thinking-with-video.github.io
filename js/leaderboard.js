@@ -14,7 +14,7 @@ function generateVideoGenTable() {
           <td class="js-sort-number"><strong>Visual Symmetry</strong></td>
           <td class="js-sort-number"><strong>Visual Gradient</strong></td>
           <td class="js-sort-number"><strong>Visual Compositionality</strong></td>
-          <td class="js-sort-number"><strong>ARC-AGI-2</strong></td>
+          <td class="js-sort-number"><strong>ARC AGI 2</strong></td>
       </tr></thead><tbody>`;
 
   var keys = Object.keys(data);
@@ -65,7 +65,7 @@ function generateVisionLangTable() {
           <td class="js-sort-number"><strong>Visual Symmetry</strong></td>
           <td class="js-sort-number"><strong>Visual Gradient</strong></td>
           <td class="js-sort-number"><strong>Visual Compositionality</strong></td>
-          <td class="js-sort-number"><strong>ARC-AGI-2</strong></td>
+          <td class="js-sort-number"><strong>ARC AGI 2</strong></td>
       </tr></thead><tbody>`;
 
   var keys = Object.keys(data);

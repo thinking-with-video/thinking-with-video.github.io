@@ -761,7 +761,8 @@
 
       .table-container {
         margin-bottom: 2rem;
-        text-align: center;
+        display: flex;
+        justify-content: center;
       }
       
       :root {
@@ -818,6 +819,9 @@
         </a>
         <a class="btn-link" href="https://huggingface.co/papers/2511.04570" target="_blank" rel="noopener noreferrer">
           <span style="margin-right: 0.5rem;">🤗</span>Daily Paper
+        </a>
+        <a class="btn-link" href="#leaderboard">
+          <i class="fas fa-trophy"></i>Leaderboard
         </a>
       </div>
 
@@ -896,7 +900,7 @@ James buys a plane.  The plane cost $150,000.  He pays $5000 a month to rent a h
       </div>
 
       <!-- Leaderboard Section -->
-      <div class="leaderboard-section">
+      <div class="leaderboard-section" id="leaderboard">
         <h2 class="section-header">Leaderboard</h2>
         
         <h3 class="leaderboard-subtitle">Video Generation Models</h3>
