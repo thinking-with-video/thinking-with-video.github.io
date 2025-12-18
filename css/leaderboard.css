@@ -69,6 +69,12 @@ table#vision-lang-results.js-sort-9 tbody tr td:nth-child(10) {
     white-space: nowrap;
 }
 
+/* Force ARC AGI 2 column header to stay on one line */
+#video-gen-results thead td:nth-child(10),
+#vision-lang-results thead td:nth-child(10) {
+    white-space: nowrap;
+}
+
 #video-gen-results td,
 #vision-lang-results td {
     border: 1px solid #ddd;
