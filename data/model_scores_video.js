@@ -1,0 +1,128 @@
+// Video Generation Models Scores
+var video_gen_scores = {
+  "1": {
+    "Model": "Sora 2🥇",
+    "Average": 44.5,
+    "Eyeballing Point": 45,
+    "Eyeballing Line": 38,
+    "Eyeballing Shape": 35,
+    "Visual Symmetry": 82,
+    "Visual Gradient": 52,
+    "Visual Compositionality": 58,
+    "ARC-AGI-2": 1.3
+  },
+  "2": {
+    "Model": "Veo 3.1🥈",
+    "Average": 39.5,
+    "Eyeballing Point": 34,
+    "Eyeballing Line": 24,
+    "Eyeballing Shape": 30,
+    "Visual Symmetry": 78,
+    "Visual Gradient": 40,
+    "Visual Compositionality": 70,
+    "ARC-AGI-2": 0.71
+  },
+  "3": {
+    "Model": "MiniMax Hailuo 2.3🥉",
+    "Average": 37.1,
+    "Eyeballing Point": 37,
+    "Eyeballing Line": 34,
+    "Eyeballing Shape": 28,
+    "Visual Symmetry": 73,
+    "Visual Gradient": 45,
+    "Visual Compositionality": 43,
+    "ARC-AGI-2": 0
+  },
+  "4": {
+    "Model": "doubao-seedance-1-0-pro-250528",
+    "Average": 17.7,
+    "Eyeballing Point": 22,
+    "Eyeballing Line": 24,
+    "Eyeballing Shape": 35,
+    "Visual Symmetry": 25,
+    "Visual Gradient": 10,
+    "Visual Compositionality": 8,
+    "ARC-AGI-2": 0
+  },
+  "5": {
+    "Model": "Wan2.2-TI2V-5B",
+    "Average": 10.7,
+    "Eyeballing Point": 18,
+    "Eyeballing Line": 10,
+    "Eyeballing Shape": 20,
+    "Visual Symmetry": 8,
+    "Visual Gradient": 10,
+    "Visual Compositionality": 8,
+    "ARC-AGI-2": 0.71
+  }
+};
+
+// Vision-Language Models Scores
+var vision_lang_scores = {
+  "1": {
+    "Model": "Claude Sonnet 4.5🥇",
+    "Average": 50,
+    "Eyeballing Point": 36,
+    "Eyeballing Line": 26,
+    "Eyeballing Shape": 51,
+    "Visual Symmetry": 80,
+    "Visual Gradient": 70,
+    "Visual Compositionality": 82,
+    "ARC-AGI-2": 5.3
+  },
+  "2": {
+    "Model": "GPT5 high🥈",
+    "Average": 48.9,
+    "Eyeballing Point": 34,
+    "Eyeballing Line": 24,
+    "Eyeballing Shape": 33,
+    "Visual Symmetry": 99,
+    "Visual Gradient": 67,
+    "Visual Compositionality": 85,
+    "ARC-AGI-2": 0.5
+  },
+  "3": {
+    "Model": "Gemini 2.5 Pro🥉",
+    "Average": 47.4,
+    "Eyeballing Point": 28,
+    "Eyeballing Line": 21,
+    "Eyeballing Shape": 35,
+    "Visual Symmetry": 95,
+    "Visual Gradient": 84,
+    "Visual Compositionality": 67,
+    "ARC-AGI-2": 1.9
+  },
+  "4": {
+    "Model": "Qwen3-VL-235B-A22B",
+    "Average": 43.1,
+    "Eyeballing Point": 24,
+    "Eyeballing Line": 17,
+    "Eyeballing Shape": 30,
+    "Visual Symmetry": 93,
+    "Visual Gradient": 55,
+    "Visual Compositionality": 83,
+    "ARC-AGI-2": 0
+  },
+  "5": {
+    "Model": "Qwen3-VL-32B",
+    "Average": 42.3,
+    "Eyeballing Point": 33,
+    "Eyeballing Line": 21,
+    "Eyeballing Shape": 20,
+    "Visual Symmetry": 85,
+    "Visual Gradient": 55,
+    "Visual Compositionality": 78,
+    "ARC-AGI-2": 4.1
+  },
+  "6": {
+    "Model": "Qwen3-VL-Plus",
+    "Average": 42,
+    "Eyeballing Point": 32,
+    "Eyeballing Line": 29,
+    "Eyeballing Shape": 30,
+    "Visual Symmetry": 90,
+    "Visual Gradient": 35,
+    "Visual Compositionality": 78,
+    "ARC-AGI-2": 0
+  }
+};
