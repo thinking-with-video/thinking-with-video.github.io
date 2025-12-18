@@ -42,7 +42,7 @@ function sortTable(Table, col, dir) {
         if (null != sortClass && sortTable.sortCol == col) {
             sortTable.sortDir = 'js-sort-asc' == sortClass[0] ? -1 : 1;
         } else {
-            sortTable.sortDir = 1;
+            sortTable.sortDir = -1; // Default to descending on first click
         }
     }
     Table.className = Table.className.replace(/ ?js-sort-(a|de)sc/g, '');
