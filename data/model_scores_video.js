@@ -2,14 +2,14 @@
 var video_gen_scores = {
   "1": {
     "Model": "Sora 2🥇",
-    "Average": 44.5,
-    "Eyeballing Point": 45,
-    "Eyeballing Line": 38,
-    "Eyeballing Shape": 35,
-    "Visual Symmetry": 82,
-    "Visual Gradient": 52,
-    "Visual Compositionality": 58,
-    "ARC-AGI-2": 1.3
+    "Average": 40.1,
+    "Eyeballing Point": 50,
+    "Eyeballing Line": 35,
+    "Eyeballing Shape": 25,
+    "Visual Symmetry": 80,
+    "Visual Gradient": 35,
+    "Visual Compositionality": 53,
+    "ARC-AGI-2": 2.8
   },
   "2": {
     "Model": "Veo 3.1🥈",
@@ -61,36 +61,36 @@ var video_gen_scores = {
 var vision_lang_scores = {
   "1": {
     "Model": "Claude Sonnet 4.5🥇",
-    "Average": 50,
-    "Eyeballing Point": 36,
-    "Eyeballing Line": 26,
-    "Eyeballing Shape": 51,
-    "Visual Symmetry": 80,
-    "Visual Gradient": 70,
-    "Visual Compositionality": 82,
-    "ARC-AGI-2": 5.3
+    "Average": 53.2,
+    "Eyeballing Point": 40,
+    "Eyeballing Line": 34,
+    "Eyeballing Shape": 60,
+    "Visual Symmetry": 75,
+    "Visual Gradient": 75,
+    "Visual Compositionality": 83,
+    "ARC-AGI-2": 5.7
   },
   "2": {
-    "Model": "GPT5 high🥈",
-    "Average": 48.9,
-    "Eyeballing Point": 34,
-    "Eyeballing Line": 24,
-    "Eyeballing Shape": 33,
-    "Visual Symmetry": 99,
-    "Visual Gradient": 67,
-    "Visual Compositionality": 85,
-    "ARC-AGI-2": 0.5
+    "Model": "Gemini 2.5 Pro🥈",
+    "Average": 50.9,
+    "Eyeballing Point": 33,
+    "Eyeballing Line": 23,
+    "Eyeballing Shape": 40,
+    "Visual Symmetry": 95,
+    "Visual Gradient": 95,
+    "Visual Compositionality": 68,
+    "ARC-AGI-2": 2.1
   },
   "3": {
-    "Model": "Gemini 2.5 Pro🥉",
-    "Average": 47.4,
-    "Eyeballing Point": 28,
-    "Eyeballing Line": 21,
-    "Eyeballing Shape": 35,
-    "Visual Symmetry": 95,
-    "Visual Gradient": 84,
-    "Visual Compositionality": 67,
-    "ARC-AGI-2": 1.9
+    "Model": "GPT5 high🥉",
+    "Average": 50.7,
+    "Eyeballing Point": 39,
+    "Eyeballing Line": 30,
+    "Eyeballing Shape": 23,
+    "Visual Symmetry": 98,
+    "Visual Gradient": 80,
+    "Visual Compositionality": 85,
+    "ARC-AGI-2": 0
   },
   "4": {
     "Model": "Qwen3-VL-235B-A22B",
