@@ -41,7 +41,7 @@ function generateVideoGenTable() {
     table += `<td>${entry["Visual Symmetry"]}</td>`;
     table += `<td>${entry["Visual Gradient"]}</td>`;
     table += `<td>${entry["Visual Compositionality"]}</td>`;
-    table += `<td>${entry["ARC-AGI-2"].toFixed(2)}</td>`;
+    table += `<td>${entry["ARC-AGI-2"].toFixed(1)}</td>`;
     table += '</tr>';
   }
   
@@ -92,7 +92,7 @@ function generateVisionLangTable() {
     table += `<td>${entry["Visual Symmetry"]}</td>`;
     table += `<td>${entry["Visual Gradient"]}</td>`;
     table += `<td>${entry["Visual Compositionality"]}</td>`;
-    table += `<td>${entry["ARC-AGI-2"].toFixed(2)}</td>`;
+    table += `<td>${entry["ARC-AGI-2"].toFixed(1)}</td>`;
     table += '</tr>';
   }
   
