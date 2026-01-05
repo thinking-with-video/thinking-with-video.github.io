@@ -10,6 +10,7 @@ function generateMergedTable() {
   var videoKeys = Object.keys(video_gen_scores);
   for (var i = 0; i < videoKeys.length; i++) {
     var entry = Object.assign({}, video_gen_scores[videoKeys[i]]);
+    entry.ModelType = 'Video🎞️';
     mergedData.push(entry);
   }
   
@@ -17,6 +18,7 @@ function generateMergedTable() {
   var visionKeys = Object.keys(vision_lang_scores);
   for (var i = 0; i < visionKeys.length; i++) {
     var entry = Object.assign({}, vision_lang_scores[visionKeys[i]]);
+    entry.ModelType = 'VLM📃';
     mergedData.push(entry);
   }
   
@@ -32,6 +34,7 @@ function generateMergedTable() {
   table += `<thead><tr>
           <td class="js-sort-number"><strong>#</strong></td>
           <td class="js-sort"><strong>Model</strong></td>
+          <td class="js-sort"><strong>Model Type</strong></td>
           <td class="js-sort-number"><strong><u>Average</u></strong></td>
           <td class="js-sort-number"><strong>Eyeballing Point</strong></td>
           <td class="js-sort-number"><strong>Eyeballing Line</strong></td>
@@ -53,9 +56,11 @@ function generateMergedTable() {
     // Highlight top 3
     if (rank <= 3) {
       table += `<td><b class="best-score-text">${entry.Model}</b></td>`;
+      table += `<td>${entry.ModelType}</td>`;
       table += `<td><b class="best-score-text">${entry.Average.toFixed(1)}</b></td>`;
     } else {
       table += `<td><b>${entry.Model}</b></td>`;
+      table += `<td>${entry.ModelType}</td>`;
       table += `<td><b>${entry.Average.toFixed(1)}</b></td>`;
     }
     
