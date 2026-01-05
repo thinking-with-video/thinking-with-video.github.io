@@ -1,3 +1,78 @@
+// Configuration: Set to true to merge tables, false to show separately
+var MERGE_LEADERBOARD_TABLES = true;
+
+// Generate merged leaderboard table
+function generateMergedTable() {
+  // Merge both data sources
+  var mergedData = [];
+  
+  // Add video generation models
+  var videoKeys = Object.keys(video_gen_scores);
+  for (var i = 0; i < videoKeys.length; i++) {
+    var entry = Object.assign({}, video_gen_scores[videoKeys[i]]);
+    mergedData.push(entry);
+  }
+  
+  // Add vision-language models
+  var visionKeys = Object.keys(vision_lang_scores);
+  for (var i = 0; i < visionKeys.length; i++) {
+    var entry = Object.assign({}, vision_lang_scores[visionKeys[i]]);
+    mergedData.push(entry);
+  }
+  
+  // Sort by Average score (descending)
+  mergedData.sort(function(a, b) {
+    return b.Average - a.Average;
+  });
+  
+  // Generate table
+  var table = '<table class="js-sort-table" id="merged-results">';
+  
+  // Table header
+  table += `<thead><tr>
+          <td class="js-sort-number"><strong>#</strong></td>
+          <td class="js-sort"><strong>Model</strong></td>
+          <td class="js-sort-number"><strong><u>Average</u></strong></td>
+          <td class="js-sort-number"><strong>Eyeballing Point</strong></td>
+          <td class="js-sort-number"><strong>Eyeballing Line</strong></td>
+          <td class="js-sort-number"><strong>Eyeballing Shape</strong></td>
+          <td class="js-sort-number"><strong>Visual Symmetry</strong></td>
+          <td class="js-sort-number"><strong>Visual Gradient</strong></td>
+          <td class="js-sort-number"><strong>Visual Compositionality</strong></td>
+          <td class="js-sort-number"><strong>ARC&nbsp;AGI&nbsp;2</strong></td>
+      </tr></thead><tbody>`;
+  
+  // Generate rows
+  for (var i = 0; i < mergedData.length; i++) {
+    var entry = mergedData[i];
+    var rank = i + 1;
+    
+    table += '<tr>';
+    table += `<td>${rank}</td>`;
+    
+    // Highlight top 3
+    if (rank <= 3) {
+      table += `<td><b class="best-score-text">${entry.Model}</b></td>`;
+      table += `<td><b class="best-score-text">${entry.Average.toFixed(1)}</b></td>`;
+    } else {
+      table += `<td><b>${entry.Model}</b></td>`;
+      table += `<td><b>${entry.Average.toFixed(1)}</b></td>`;
+    }
+    
+    table += `<td>${entry["Eyeballing Point"]}</td>`;
+    table += `<td>${entry["Eyeballing Line"]}</td>`;
+    table += `<td>${entry["Eyeballing Shape"]}</td>`;
+    table += `<td>${entry["Visual Symmetry"]}</td>`;
+    table += `<td>${entry["Visual Gradient"]}</td>`;
+    table += `<td>${entry["Visual Compositionality"]}</td>`;
+    table += `<td>${entry["ARC-AGI-2"].toFixed(1)}</td>`;
+    table += '</tr>';
+  }
+  
+  table += '</tbody></table>';
+  document.getElementById('merged-leaderboard').innerHTML = table;
+}
+
 // Generate Video Generation Models Table
 function generateVideoGenTable() {
   var data = video_gen_scores;
@@ -102,6 +177,16 @@ function generateVisionLangTable() {
 
 // Call the functions when the window loads
 window.addEventListener('DOMContentLoaded', function() {
-  generateVideoGenTable();
-  generateVisionLangTable();
+  if (MERGE_LEADERBOARD_TABLES) {
+    // Merged table mode
+    document.getElementById('merged-table-container').style.display = 'flex';
+    document.getElementById('separate-tables-container').style.display = 'none';
+    generateMergedTable();
+  } else {
+    // Separate tables mode
+    document.getElementById('merged-table-container').style.display = 'none';
+    document.getElementById('separate-tables-container').style.display = 'block';
+    generateVideoGenTable();
+    generateVisionLangTable();
+  }
 });

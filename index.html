@@ -929,15 +929,24 @@ James buys a plane.  The plane cost $150,000.  He pays $5000 a month to rent a h
       <div class="leaderboard-section" id="leaderboard">
         <h2 class="section-header">Leaderboard on VideoThinkBench (minitest)</h2>
         
-        <h3 class="leaderboard-subtitle">Video Generation Models</h3>
-        <div class="table-container">
-          <div id="video-gen-leaderboard"></div>
+        <!-- Merged Table (shown when MERGE_LEADERBOARD_TABLES = true) -->
+        <div class="table-container" id="merged-table-container" style="display: none;">
+          <div id="merged-leaderboard"></div>
         </div>
 
-        <h3 class="leaderboard-subtitle">Vision-Language Models</h3>
-        <div class="table-container">
-          <div id="vision-lang-leaderboard"></div>
+        <!-- Separate Tables (shown when MERGE_LEADERBOARD_TABLES = false) -->
+        <div id="separate-tables-container">
+          <h3 class="leaderboard-subtitle">Video Generation Models</h3>
+          <div class="table-container">
+            <div id="video-gen-leaderboard"></div>
+          </div>
+
+          <h3 class="leaderboard-subtitle">Vision-Language Models</h3>
+          <div class="table-container">
+            <div id="vision-lang-leaderboard"></div>
+          </div>
         </div>
+
         <div style="text-align: left; margin-top: 1rem; font-size: 16px; line-height: 1.5; color: #000; max-width: 100%; margin-left: auto; margin-right: auto;">
           <p><strong>Note:</strong><br>
           <strong>"Eyeballing Point/Line/Shape"</strong> refer to Point Tasks, Line Tasks and Shape Tasks in <a href="https://github.com/betmma/VLMPuzzle?tab=readme-ov-file#eyeballing-puzzles">Eyeballing Puzzles</a>. The results are <em>Major Frame</em> evaluation results.<br>
@@ -1332,7 +1341,7 @@ James buys a plane.  The plane cost $150,000.  He pays $5000 a month to rent a h
     
     <!-- Leaderboard Scripts -->
     <script type="text/javascript" src="./js/sort-table.js"></script>
-    <script src="./data/model_scores_video.js"></script>
+    <script src="./data/model_scores.js"></script>
     <script src="./js/leaderboard.js"></script>
     
   </body>
