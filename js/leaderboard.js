@@ -2,7 +2,7 @@
 var MERGE_LEADERBOARD_TABLES_MINITEST = false;
 
 // Configuration for MINITEST: Set to true to highlight top 3 models with medals and red text
-var HIGHLIGHT_TOP_MODELS_MINITEST = false;
+var HIGHLIGHT_TOP_MODELS_MINITEST = true;
 
 // Configuration for TEST: Set to true to merge tables, false to show separately
 var MERGE_LEADERBOARD_TABLES_TEST = true;
