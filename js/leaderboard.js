@@ -1,8 +1,8 @@
 // Configuration: Set to true to merge tables, false to show separately
-var MERGE_LEADERBOARD_TABLES = true;
+var MERGE_LEADERBOARD_TABLES = false;
 
 // Configuration: Set to true to highlight top 3 models with medals and red text
-var HIGHLIGHT_TOP_MODELS = false;
+var HIGHLIGHT_TOP_MODELS = true;
 
 // ==================== MINITEST LEADERBOARD ====================
 
