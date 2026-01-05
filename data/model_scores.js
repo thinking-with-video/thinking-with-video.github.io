@@ -1,7 +1,7 @@
 // Video Generation Models Scores
 var video_gen_scores = {
   "1": {
-    "Model": "Sora 2🥇",
+    "Model": "Sora 2",
     "Average": 40.1,
     "Eyeballing Point": 50,
     "Eyeballing Line": 35,
@@ -12,7 +12,7 @@ var video_gen_scores = {
     "ARC-AGI-2": 2.8
   },
   "2": {
-    "Model": "Veo 3.1🥈",
+    "Model": "Veo 3.1",
     "Average": 39.5,
     "Eyeballing Point": 34,
     "Eyeballing Line": 24,
@@ -23,7 +23,7 @@ var video_gen_scores = {
     "ARC-AGI-2": 0.71
   },
   "3": {
-    "Model": "MiniMax Hailuo 2.3🥉",
+    "Model": "MiniMax Hailuo 2.3",
     "Average": 37.1,
     "Eyeballing Point": 37,
     "Eyeballing Line": 34,
@@ -60,7 +60,7 @@ var video_gen_scores = {
 // Vision-Language Models Scores
 var vision_lang_scores = {
   "1": {
-    "Model": "Claude Sonnet 4.5🥇",
+    "Model": "Claude Sonnet 4.5",
     "Average": 53.2,
     "Eyeballing Point": 40,
     "Eyeballing Line": 34,
@@ -71,7 +71,7 @@ var vision_lang_scores = {
     "ARC-AGI-2": 5.7
   },
   "2": {
-    "Model": "Gemini 2.5 Pro🥈",
+    "Model": "Gemini 2.5 Pro",
     "Average": 50.9,
     "Eyeballing Point": 33,
     "Eyeballing Line": 23,
@@ -82,7 +82,7 @@ var vision_lang_scores = {
     "ARC-AGI-2": 2.1
   },
   "3": {
-    "Model": "GPT5 high🥉",
+    "Model": "GPT5 high",
     "Average": 50.7,
     "Eyeballing Point": 39,
     "Eyeballing Line": 30,
