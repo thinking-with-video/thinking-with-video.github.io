@@ -27,6 +27,16 @@ table#video-gen-results.js-sort-6 tbody tr td:nth-child(7),
 table#video-gen-results.js-sort-7 tbody tr td:nth-child(8),
 table#video-gen-results.js-sort-8 tbody tr td:nth-child(9),
 table#video-gen-results.js-sort-9 tbody tr td:nth-child(10),
+table#video-gen-results-test.js-sort-0 tbody tr td:nth-child(1),
+table#video-gen-results-test.js-sort-1 tbody tr td:nth-child(2),
+table#video-gen-results-test.js-sort-2 tbody tr td:nth-child(3),
+table#video-gen-results-test.js-sort-3 tbody tr td:nth-child(4),
+table#video-gen-results-test.js-sort-4 tbody tr td:nth-child(5),
+table#video-gen-results-test.js-sort-5 tbody tr td:nth-child(6),
+table#video-gen-results-test.js-sort-6 tbody tr td:nth-child(7),
+table#video-gen-results-test.js-sort-7 tbody tr td:nth-child(8),
+table#video-gen-results-test.js-sort-8 tbody tr td:nth-child(9),
+table#video-gen-results-test.js-sort-9 tbody tr td:nth-child(10),
 table#image-gen-results.js-sort-0 tbody tr td:nth-child(1),
 table#image-gen-results.js-sort-1 tbody tr td:nth-child(2),
 table#image-gen-results.js-sort-2 tbody tr td:nth-child(3),
@@ -37,6 +47,16 @@ table#image-gen-results.js-sort-6 tbody tr td:nth-child(7),
 table#image-gen-results.js-sort-7 tbody tr td:nth-child(8),
 table#image-gen-results.js-sort-8 tbody tr td:nth-child(9),
 table#image-gen-results.js-sort-9 tbody tr td:nth-child(10),
+table#image-gen-results-test.js-sort-0 tbody tr td:nth-child(1),
+table#image-gen-results-test.js-sort-1 tbody tr td:nth-child(2),
+table#image-gen-results-test.js-sort-2 tbody tr td:nth-child(3),
+table#image-gen-results-test.js-sort-3 tbody tr td:nth-child(4),
+table#image-gen-results-test.js-sort-4 tbody tr td:nth-child(5),
+table#image-gen-results-test.js-sort-5 tbody tr td:nth-child(6),
+table#image-gen-results-test.js-sort-6 tbody tr td:nth-child(7),
+table#image-gen-results-test.js-sort-7 tbody tr td:nth-child(8),
+table#image-gen-results-test.js-sort-8 tbody tr td:nth-child(9),
+table#image-gen-results-test.js-sort-9 tbody tr td:nth-child(10),
 table#vision-lang-results.js-sort-0 tbody tr td:nth-child(1),
 table#vision-lang-results.js-sort-1 tbody tr td:nth-child(2),
 table#vision-lang-results.js-sort-2 tbody tr td:nth-child(3),
@@ -47,6 +67,16 @@ table#vision-lang-results.js-sort-6 tbody tr td:nth-child(7),
 table#vision-lang-results.js-sort-7 tbody tr td:nth-child(8),
 table#vision-lang-results.js-sort-8 tbody tr td:nth-child(9),
 table#vision-lang-results.js-sort-9 tbody tr td:nth-child(10),
+table#vision-lang-results-test.js-sort-0 tbody tr td:nth-child(1),
+table#vision-lang-results-test.js-sort-1 tbody tr td:nth-child(2),
+table#vision-lang-results-test.js-sort-2 tbody tr td:nth-child(3),
+table#vision-lang-results-test.js-sort-3 tbody tr td:nth-child(4),
+table#vision-lang-results-test.js-sort-4 tbody tr td:nth-child(5),
+table#vision-lang-results-test.js-sort-5 tbody tr td:nth-child(6),
+table#vision-lang-results-test.js-sort-6 tbody tr td:nth-child(7),
+table#vision-lang-results-test.js-sort-7 tbody tr td:nth-child(8),
+table#vision-lang-results-test.js-sort-8 tbody tr td:nth-child(9),
+table#vision-lang-results-test.js-sort-9 tbody tr td:nth-child(10),
 table#merged-results.js-sort-0 tbody tr td:nth-child(1),
 table#merged-results.js-sort-1 tbody tr td:nth-child(2),
 table#merged-results.js-sort-2 tbody tr td:nth-child(3),
@@ -57,7 +87,18 @@ table#merged-results.js-sort-6 tbody tr td:nth-child(7),
 table#merged-results.js-sort-7 tbody tr td:nth-child(8),
 table#merged-results.js-sort-8 tbody tr td:nth-child(9),
 table#merged-results.js-sort-9 tbody tr td:nth-child(10),
-table#merged-results.js-sort-10 tbody tr td:nth-child(11) {
+table#merged-results.js-sort-10 tbody tr td:nth-child(11),
+table#merged-results-test.js-sort-0 tbody tr td:nth-child(1),
+table#merged-results-test.js-sort-1 tbody tr td:nth-child(2),
+table#merged-results-test.js-sort-2 tbody tr td:nth-child(3),
+table#merged-results-test.js-sort-3 tbody tr td:nth-child(4),
+table#merged-results-test.js-sort-4 tbody tr td:nth-child(5),
+table#merged-results-test.js-sort-5 tbody tr td:nth-child(6),
+table#merged-results-test.js-sort-6 tbody tr td:nth-child(7),
+table#merged-results-test.js-sort-7 tbody tr td:nth-child(8),
+table#merged-results-test.js-sort-8 tbody tr td:nth-child(9),
+table#merged-results-test.js-sort-9 tbody tr td:nth-child(10),
+table#merged-results-test.js-sort-10 tbody tr td:nth-child(11) {
     background: #dee;
 }
 
@@ -65,7 +106,11 @@ table#merged-results.js-sort-10 tbody tr td:nth-child(11) {
 #video-gen-results,
 #image-gen-results,
 #vision-lang-results,
-#merged-results {
+#merged-results,
+#video-gen-results-test,
+#image-gen-results-test,
+#vision-lang-results-test,
+#merged-results-test {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     border-collapse: collapse;
@@ -81,7 +126,11 @@ table#merged-results.js-sort-10 tbody tr td:nth-child(11) {
 #video-gen-results th,
 #image-gen-results th,
 #vision-lang-results th,
-#merged-results th {
+#merged-results th,
+#video-gen-results-test th,
+#image-gen-results-test th,
+#vision-lang-results-test th,
+#merged-results-test th {
     border: 1px solid #ddd;
     padding: 8px 12px;
     padding-top: 12px;
@@ -97,23 +146,32 @@ table#merged-results.js-sort-10 tbody tr td:nth-child(11) {
 /* Force ARC AGI 2 column header to stay on one line */
 #video-gen-results thead td:nth-child(10),
 #image-gen-results thead td:nth-child(10),
-#vision-lang-results thead td:nth-child(10) {
+#vision-lang-results thead td:nth-child(10),
+#video-gen-results-test thead td:nth-child(10),
+#image-gen-results-test thead td:nth-child(10),
+#vision-lang-results-test thead td:nth-child(10) {
     white-space: nowrap;
 }
 
-#merged-results thead td:nth-child(11) {
+#merged-results thead td:nth-child(11),
+#merged-results-test thead td:nth-child(11) {
     white-space: nowrap;
 }
 
 /* Model Type column should not wrap */
-#merged-results td:nth-child(3) {
+#merged-results td:nth-child(3),
+#merged-results-test td:nth-child(3) {
     white-space: nowrap;
 }
 
 #video-gen-results td,
 #image-gen-results td,
 #vision-lang-results td,
-#merged-results td {
+#merged-results td,
+#video-gen-results-test td,
+#image-gen-results-test td,
+#vision-lang-results-test td,
+#merged-results-test td {
     border: 1px solid #ddd;
     padding: 8px 12px;
 }
@@ -122,21 +180,33 @@ table#merged-results.js-sort-10 tbody tr td:nth-child(11) {
 #video-gen-results td:nth-child(2),
 #image-gen-results td:nth-child(2),
 #vision-lang-results td:nth-child(2),
-#merged-results td:nth-child(2) {
+#merged-results td:nth-child(2),
+#video-gen-results-test td:nth-child(2),
+#image-gen-results-test td:nth-child(2),
+#vision-lang-results-test td:nth-child(2),
+#merged-results-test td:nth-child(2) {
     white-space: nowrap;
 }
 
 #video-gen-results tr:nth-child(even),
 #image-gen-results tr:nth-child(even),
 #vision-lang-results tr:nth-child(even),
-#merged-results tr:nth-child(even) {
+#merged-results tr:nth-child(even),
+#video-gen-results-test tr:nth-child(even),
+#image-gen-results-test tr:nth-child(even),
+#vision-lang-results-test tr:nth-child(even),
+#merged-results-test tr:nth-child(even) {
     background-color: #f5f5f5;
 }
 
 #video-gen-results tr:hover,
 #image-gen-results tr:hover,
 #vision-lang-results tr:hover,
-#merged-results tr:hover {
+#merged-results tr:hover,
+#video-gen-results-test tr:hover,
+#image-gen-results-test tr:hover,
+#vision-lang-results-test tr:hover,
+#merged-results-test tr:hover {
     background-color: #ddd;
 }
 
