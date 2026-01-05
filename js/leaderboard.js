@@ -17,6 +17,14 @@ function generateMergedTable() {
     mergedData.push(entry);
   }
   
+  // Add image generation models
+  var imageKeys = Object.keys(image_gen_scores);
+  for (var i = 0; i < imageKeys.length; i++) {
+    var entry = Object.assign({}, image_gen_scores[imageKeys[i]]);
+    entry.ModelType = 'Image🖼️';
+    mergedData.push(entry);
+  }
+  
   // Add vision-language models
   var visionKeys = Object.keys(vision_lang_scores);
   for (var i = 0; i < visionKeys.length; i++) {
@@ -147,6 +155,65 @@ function generateVideoGenTable() {
   document.getElementById('video-gen-leaderboard').innerHTML = table;
 }
 
+// Generate Image Generation Models Table
+function generateImageGenTable() {
+  var data = image_gen_scores;
+  var table = '<table class="js-sort-table" id="image-gen-results">';
+  
+  // Table header
+  table += `<thead><tr>
+          <td class="js-sort-number"><strong>#</strong></td>
+          <td class="js-sort"><strong>Model</strong></td>
+          <td class="js-sort-number"><strong><u>Average</u></strong></td>
+          <td class="js-sort-number"><strong>Eyeballing Point</strong></td>
+          <td class="js-sort-number"><strong>Eyeballing Line</strong></td>
+          <td class="js-sort-number"><strong>Eyeballing Shape</strong></td>
+          <td class="js-sort-number"><strong>Visual Symmetry</strong></td>
+          <td class="js-sort-number"><strong>Visual Gradient</strong></td>
+          <td class="js-sort-number"><strong>Visual Compositionality</strong></td>
+          <td class="js-sort-number"><strong>ARC&nbsp;AGI&nbsp;2</strong></td>
+      </tr></thead><tbody>`;
+
+  var keys = Object.keys(data);
+  var topRanks = ["1", "2", "3"];
+
+  for (var i = 0; i < keys.length; i++) {
+    var key = keys[i];
+    var entry = data[key];
+    
+    // Add medal emoji if HIGHLIGHT_TOP_MODELS is enabled
+    var modelName = entry.Model;
+    if (HIGHLIGHT_TOP_MODELS && topRanks.includes(key)) {
+      var medals = {'1': '🥇', '2': '🥈', '3': '🥉'};
+      modelName = entry.Model + medals[key];
+    }
+    
+    table += '<tr>';
+    table += `<td>${key}</td>`;
+    
+    // Highlight top 3 with red text if HIGHLIGHT_TOP_MODELS is enabled
+    if (HIGHLIGHT_TOP_MODELS && topRanks.includes(key)) {
+      table += `<td><b class="best-score-text">${modelName}</b></td>`;
+      table += `<td><b class="best-score-text">${entry.Average.toFixed(1)}</b></td>`;
+    } else {
+      table += `<td><b>${modelName}</b></td>`;
+      table += `<td><b>${entry.Average.toFixed(1)}</b></td>`;
+    }
+    
+    table += `<td>${entry["Eyeballing Point"]}</td>`;
+    table += `<td>${entry["Eyeballing Line"]}</td>`;
+    table += `<td>${entry["Eyeballing Shape"]}</td>`;
+    table += `<td>${entry["Visual Symmetry"]}</td>`;
+    table += `<td>${entry["Visual Gradient"]}</td>`;
+    table += `<td>${entry["Visual Compositionality"]}</td>`;
+    table += `<td>${entry["ARC-AGI-2"].toFixed(1)}</td>`;
+    table += '</tr>';
+  }
+  
+  table += '</tbody></table>';
+  document.getElementById('image-gen-leaderboard').innerHTML = table;
+}
+
 // Generate Vision-Language Models Table
 function generateVisionLangTable() {
   var data = vision_lang_scores;
@@ -218,6 +285,7 @@ window.addEventListener('DOMContentLoaded', function() {
     document.getElementById('merged-table-container').style.display = 'none';
     document.getElementById('separate-tables-container').style.display = 'block';
     generateVideoGenTable();
+    generateImageGenTable();
     generateVisionLangTable();
   }
 });

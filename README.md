@@ -28,6 +28,14 @@ Video Generation Models (Video🎞️)
 
 ---
 
+|  #   |               Model                | Average | Eyeballing Point | Eyeballing Line | Eyeballing Shape | Visual Symmetry | Visual Gradient | Visual Compositionality | ARC-AGI-2 |
+| :--: | :--------------------------------: | :-----: | :--------------: | :-------------: | :--------------: | :-------------: | :-------------: | :---------------------: | :-------: |
+|  1   | Gemini 3 Pro Image (Nano Banana 2) |  42.5   |        24        |       30        |        35        |       85        |       50        |           73            |   0.71    |
+|  2   |            Seedream 4.5            |  35.0   |        26        |       16        |        30        |       75        |       35        |           63            |     0     |
+|  3   |           GPT image 1.5            |  27.6   |        24        |       15        |        18        |       38        |       50        |           48            |     0     |
+
+---
+
 |  #   |             Model              | Model Type | Average | Eyeballing Point | Eyeballing Line | Eyeballing Shape | Visual Symmetry | Visual Gradient | Visual Compositionality | ARC-AGI-2 |
 | :--: | :----------------------------: | :--------: | :-----: | :--------------: | :-------------: | :--------------: | :-------------: | :-------------: | :---------------------: | :-------: |
 |  1   |       Claude Sonnet 4.5        |    VLM📃    |   50    |        36        |       26        |        51        |       80        |       70        |           82            |    5.3    |
@@ -46,12 +54,11 @@ Video Generation Models (Video🎞️)
 
 * **Model Type**
   * **Video🎞️:** Video Generation Model
+  * **Image🖼️：**Image Generation Model
   * **VLM📃:** Vision-Language Model
-
 * **Eyeballing Puzzles**
   * **Eyeballing Point/Line/Shape in the table.** They refer to the Point Tasks, Line Tasks and Shape Tasks in Eyeballing Puzzles.
   * The results are Major Frame evaluation results.
 * **Visual Puzzles**
   * **Visual Symmetry/Gradient/Compositionality in the table.** They refer to the Symmetry Tasks, Gradient Tasks and Compositionality Tasks in Visual Puzzles.
-
 

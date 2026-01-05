@@ -57,6 +57,44 @@ var video_gen_scores = {
   }
 };
 
+// Image Generation Models Scores
+var image_gen_scores = {
+  "1": {
+    "Model": "Nano Banana 2",
+    // "Model": "Gemini 3 Pro Image (Nano Banana 2)",
+    "Average": 42.5,
+    "Eyeballing Point": 24,
+    "Eyeballing Line": 30,
+    "Eyeballing Shape": 35,
+    "Visual Symmetry": 85,
+    "Visual Gradient": 50,
+    "Visual Compositionality": 73,
+    "ARC-AGI-2": 0.71
+  },
+  "2": {
+    "Model": "Seedream 4.5",
+    "Average": 35.0,
+    "Eyeballing Point": 26,
+    "Eyeballing Line": 16,
+    "Eyeballing Shape": 30,
+    "Visual Symmetry": 75,
+    "Visual Gradient": 35,
+    "Visual Compositionality": 63,
+    "ARC-AGI-2": 0
+  },
+  "3": {
+    "Model": "GPT-Image 1.5",
+    "Average": 27.6,
+    "Eyeballing Point": 24,
+    "Eyeballing Line": 15,
+    "Eyeballing Shape": 18,
+    "Visual Symmetry": 38,
+    "Visual Gradient": 50,
+    "Visual Compositionality": 48,
+    "ARC-AGI-2": 0
+  }
+};
+
 // Vision-Language Models Scores
 var vision_lang_scores = {
   "1": {
