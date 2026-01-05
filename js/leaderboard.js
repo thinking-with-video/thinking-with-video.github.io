@@ -1,8 +1,14 @@
-// Configuration: Set to true to merge tables, false to show separately
-var MERGE_LEADERBOARD_TABLES = false;
+// Configuration for MINITEST: Set to true to merge tables, false to show separately
+var MERGE_LEADERBOARD_TABLES_MINITEST = false;
 
-// Configuration: Set to true to highlight top 3 models with medals and red text
-var HIGHLIGHT_TOP_MODELS = true;
+// Configuration for MINITEST: Set to true to highlight top 3 models with medals and red text
+var HIGHLIGHT_TOP_MODELS_MINITEST = false;
+
+// Configuration for TEST: Set to true to merge tables, false to show separately
+var MERGE_LEADERBOARD_TABLES_TEST = false;
+
+// Configuration for TEST: Set to true to highlight top 3 models with medals and red text
+var HIGHLIGHT_TOP_MODELS_TEST = false;
 
 // ==================== MINITEST LEADERBOARD ====================
 
@@ -63,9 +69,9 @@ function generateMergedTable() {
     var entry = mergedData[i];
     var rank = i + 1;
     
-    // Add medal emoji if HIGHLIGHT_TOP_MODELS is enabled
+    // Add medal emoji if HIGHLIGHT_TOP_MODELS_MINITEST is enabled
     var modelName = entry.Model;
-    if (HIGHLIGHT_TOP_MODELS && rank <= 3) {
+    if (HIGHLIGHT_TOP_MODELS_MINITEST && rank <= 3) {
       var medals = ['🥇', '🥈', '🥉'];
       modelName = entry.Model + medals[rank - 1];
     }
@@ -73,8 +79,8 @@ function generateMergedTable() {
     table += '<tr>';
     table += `<td>${rank}</td>`;
     
-    // Highlight top 3 with red text if HIGHLIGHT_TOP_MODELS is enabled
-    if (HIGHLIGHT_TOP_MODELS && rank <= 3) {
+    // Highlight top 3 with red text if HIGHLIGHT_TOP_MODELS_MINITEST is enabled
+    if (HIGHLIGHT_TOP_MODELS_MINITEST && rank <= 3) {
       table += `<td><b class="best-score-text">${modelName}</b></td>`;
       table += `<td>${entry.ModelType}</td>`;
       table += `<td><b class="best-score-text">${entry.Average.toFixed(1)}</b></td>`;
@@ -124,9 +130,9 @@ function generateVideoGenTable() {
     var key = keys[i];
     var entry = data[key];
     
-    // Add medal emoji if HIGHLIGHT_TOP_MODELS is enabled
+    // Add medal emoji if HIGHLIGHT_TOP_MODELS_MINITEST is enabled
     var modelName = entry.Model;
-    if (HIGHLIGHT_TOP_MODELS && topRanks.includes(key)) {
+    if (HIGHLIGHT_TOP_MODELS_MINITEST && topRanks.includes(key)) {
       var medals = {'1': '🥇', '2': '🥈', '3': '🥉'};
       modelName = entry.Model + medals[key];
     }
@@ -134,8 +140,8 @@ function generateVideoGenTable() {
     table += '<tr>';
     table += `<td>${key}</td>`;
     
-    // Highlight top 3 with red text if HIGHLIGHT_TOP_MODELS is enabled
-    if (HIGHLIGHT_TOP_MODELS && topRanks.includes(key)) {
+    // Highlight top 3 with red text if HIGHLIGHT_TOP_MODELS_MINITEST is enabled
+    if (HIGHLIGHT_TOP_MODELS_MINITEST && topRanks.includes(key)) {
       table += `<td><b class="best-score-text">${modelName}</b></td>`;
       table += `<td><b class="best-score-text">${entry.Average.toFixed(1)}</b></td>`;
     } else {
@@ -157,7 +163,7 @@ function generateVideoGenTable() {
   document.getElementById('video-gen-leaderboard').innerHTML = table;
 }
 
-// Generate Image Generation Models Table (minitest)
+// Generate Image Generation Models Table (minitest)// Generate Image Generation Models Table (minitest)
 function generateImageGenTable() {
   var data = image_gen_scores_minitest;
   var table = '<table class="js-sort-table" id="image-gen-results">';
@@ -183,9 +189,9 @@ function generateImageGenTable() {
     var key = keys[i];
     var entry = data[key];
     
-    // Add medal emoji if HIGHLIGHT_TOP_MODELS is enabled
+    // Add medal emoji if HIGHLIGHT_TOP_MODELS_MINITEST is enabled
     var modelName = entry.Model;
-    if (HIGHLIGHT_TOP_MODELS && topRanks.includes(key)) {
+    if (HIGHLIGHT_TOP_MODELS_MINITEST && topRanks.includes(key)) {
       var medals = {'1': '🥇', '2': '🥈', '3': '🥉'};
       modelName = entry.Model + medals[key];
     }
@@ -193,8 +199,8 @@ function generateImageGenTable() {
     table += '<tr>';
     table += `<td>${key}</td>`;
     
-    // Highlight top 3 with red text if HIGHLIGHT_TOP_MODELS is enabled
-    if (HIGHLIGHT_TOP_MODELS && topRanks.includes(key)) {
+    // Highlight top 3 with red text if HIGHLIGHT_TOP_MODELS_MINITEST is enabled
+    if (HIGHLIGHT_TOP_MODELS_MINITEST && topRanks.includes(key)) {
       table += `<td><b class="best-score-text">${modelName}</b></td>`;
       table += `<td><b class="best-score-text">${entry.Average.toFixed(1)}</b></td>`;
     } else {
@@ -242,9 +248,9 @@ function generateVisionLangTable() {
     var key = keys[i];
     var entry = data[key];
     
-    // Add medal emoji if HIGHLIGHT_TOP_MODELS is enabled
+    // Add medal emoji if HIGHLIGHT_TOP_MODELS_MINITEST is enabled
     var modelName = entry.Model;
-    if (HIGHLIGHT_TOP_MODELS && topRanks.includes(key)) {
+    if (HIGHLIGHT_TOP_MODELS_MINITEST && topRanks.includes(key)) {
       var medals = {'1': '🥇', '2': '🥈', '3': '🥉'};
       modelName = entry.Model + medals[key];
     }
@@ -252,8 +258,8 @@ function generateVisionLangTable() {
     table += '<tr>';
     table += `<td>${key}</td>`;
     
-    // Highlight top 3 with red text if HIGHLIGHT_TOP_MODELS is enabled
-    if (HIGHLIGHT_TOP_MODELS && topRanks.includes(key)) {
+    // Highlight top 3 with red text if HIGHLIGHT_TOP_MODELS_MINITEST is enabled
+    if (HIGHLIGHT_TOP_MODELS_MINITEST && topRanks.includes(key)) {
       table += `<td><b class="best-score-text">${modelName}</b></td>`;
       table += `<td><b class="best-score-text">${entry.Average.toFixed(1)}</b></td>`;
     } else {
@@ -278,7 +284,7 @@ function generateVisionLangTable() {
 // Call the functions when the window loads
 window.addEventListener('DOMContentLoaded', function() {
   // Minitest tables
-  if (MERGE_LEADERBOARD_TABLES) {
+  if (MERGE_LEADERBOARD_TABLES_MINITEST) {
     // Merged table mode
     document.getElementById('merged-table-container').style.display = 'flex';
     document.getElementById('separate-tables-container').style.display = 'none';
@@ -297,7 +303,7 @@ window.addEventListener('DOMContentLoaded', function() {
   }
   
   // Test tables
-  if (MERGE_LEADERBOARD_TABLES) {
+  if (MERGE_LEADERBOARD_TABLES_TEST) {
     // Merged table mode
     document.getElementById('merged-table-container-test').style.display = 'flex';
     document.getElementById('separate-tables-container-test').style.display = 'none';
@@ -371,9 +377,9 @@ function generateMergedTableTest() {
     var entry = mergedData[i];
     var rank = i + 1;
     
-    // Add medal emoji if HIGHLIGHT_TOP_MODELS is enabled
+    // Add medal emoji if HIGHLIGHT_TOP_MODELS_TEST is enabled
     var modelName = entry.Model;
-    if (HIGHLIGHT_TOP_MODELS && rank <= 3) {
+    if (HIGHLIGHT_TOP_MODELS_TEST && rank <= 3) {
       var medals = ['🥇', '🥈', '🥉'];
       modelName = entry.Model + medals[rank - 1];
     }
@@ -381,8 +387,8 @@ function generateMergedTableTest() {
     table += '<tr>';
     table += `<td>${rank}</td>`;
     
-    // Highlight top 3 with red text if HIGHLIGHT_TOP_MODELS is enabled
-    if (HIGHLIGHT_TOP_MODELS && rank <= 3) {
+    // Highlight top 3 with red text if HIGHLIGHT_TOP_MODELS_TEST is enabled
+    if (HIGHLIGHT_TOP_MODELS_TEST && rank <= 3) {
       table += `<td><b class="best-score-text">${modelName}</b></td>`;
       table += `<td>${entry.ModelType}</td>`;
       table += `<td><b class="best-score-text">${entry.Average.toFixed(1)}</b></td>`;
@@ -432,9 +438,9 @@ function generateVideoGenTableTest() {
     var key = keys[i];
     var entry = data[key];
     
-    // Add medal emoji if HIGHLIGHT_TOP_MODELS is enabled
+    // Add medal emoji if HIGHLIGHT_TOP_MODELS_TEST is enabled
     var modelName = entry.Model;
-    if (HIGHLIGHT_TOP_MODELS && topRanks.includes(key)) {
+    if (HIGHLIGHT_TOP_MODELS_TEST && topRanks.includes(key)) {
       var medals = {'1': '🥇', '2': '🥈', '3': '🥉'};
       modelName = entry.Model + medals[key];
     }
@@ -442,8 +448,8 @@ function generateVideoGenTableTest() {
     table += '<tr>';
     table += `<td>${key}</td>`;
     
-    // Highlight top 3 with red text if HIGHLIGHT_TOP_MODELS is enabled
-    if (HIGHLIGHT_TOP_MODELS && topRanks.includes(key)) {
+    // Highlight top 3 with red text if HIGHLIGHT_TOP_MODELS_TEST is enabled
+    if (HIGHLIGHT_TOP_MODELS_TEST && topRanks.includes(key)) {
       table += `<td><b class="best-score-text">${modelName}</b></td>`;
       table += `<td><b class="best-score-text">${entry.Average.toFixed(1)}</b></td>`;
     } else {
@@ -491,9 +497,9 @@ function generateImageGenTableTest() {
     var key = keys[i];
     var entry = data[key];
     
-    // Add medal emoji if HIGHLIGHT_TOP_MODELS is enabled
+    // Add medal emoji if HIGHLIGHT_TOP_MODELS_TEST is enabled
     var modelName = entry.Model;
-    if (HIGHLIGHT_TOP_MODELS && topRanks.includes(key)) {
+    if (HIGHLIGHT_TOP_MODELS_TEST && topRanks.includes(key)) {
       var medals = {'1': '🥇', '2': '🥈', '3': '🥉'};
       modelName = entry.Model + medals[key];
     }
@@ -501,8 +507,8 @@ function generateImageGenTableTest() {
     table += '<tr>';
     table += `<td>${key}</td>`;
     
-    // Highlight top 3 with red text if HIGHLIGHT_TOP_MODELS is enabled
-    if (HIGHLIGHT_TOP_MODELS && topRanks.includes(key)) {
+    // Highlight top 3 with red text if HIGHLIGHT_TOP_MODELS_TEST is enabled
+    if (HIGHLIGHT_TOP_MODELS_TEST && topRanks.includes(key)) {
       table += `<td><b class="best-score-text">${modelName}</b></td>`;
       table += `<td><b class="best-score-text">${entry.Average.toFixed(1)}</b></td>`;
     } else {
@@ -550,9 +556,9 @@ function generateVisionLangTableTest() {
     var key = keys[i];
     var entry = data[key];
     
-    // Add medal emoji if HIGHLIGHT_TOP_MODELS is enabled
+    // Add medal emoji if HIGHLIGHT_TOP_MODELS_TEST is enabled
     var modelName = entry.Model;
-    if (HIGHLIGHT_TOP_MODELS && topRanks.includes(key)) {
+    if (HIGHLIGHT_TOP_MODELS_TEST && topRanks.includes(key)) {
       var medals = {'1': '🥇', '2': '🥈', '3': '🥉'};
       modelName = entry.Model + medals[key];
     }
@@ -560,8 +566,8 @@ function generateVisionLangTableTest() {
     table += '<tr>';
     table += `<td>${key}</td>`;
     
-    // Highlight top 3 with red text if HIGHLIGHT_TOP_MODELS is enabled
-    if (HIGHLIGHT_TOP_MODELS && topRanks.includes(key)) {
+    // Highlight top 3 with red text if HIGHLIGHT_TOP_MODELS_TEST is enabled
+    if (HIGHLIGHT_TOP_MODELS_TEST && topRanks.includes(key)) {
       table += `<td><b class="best-score-text">${modelName}</b></td>`;
       table += `<td><b class="best-score-text">${entry.Average.toFixed(1)}</b></td>`;
     } else {
