@@ -36,13 +36,24 @@ table#vision-lang-results.js-sort-5 tbody tr td:nth-child(6),
 table#vision-lang-results.js-sort-6 tbody tr td:nth-child(7),
 table#vision-lang-results.js-sort-7 tbody tr td:nth-child(8),
 table#vision-lang-results.js-sort-8 tbody tr td:nth-child(9),
-table#vision-lang-results.js-sort-9 tbody tr td:nth-child(10) {
+table#vision-lang-results.js-sort-9 tbody tr td:nth-child(10),
+table#merged-results.js-sort-0 tbody tr td:nth-child(1),
+table#merged-results.js-sort-1 tbody tr td:nth-child(2),
+table#merged-results.js-sort-2 tbody tr td:nth-child(3),
+table#merged-results.js-sort-3 tbody tr td:nth-child(4),
+table#merged-results.js-sort-4 tbody tr td:nth-child(5),
+table#merged-results.js-sort-5 tbody tr td:nth-child(6),
+table#merged-results.js-sort-6 tbody tr td:nth-child(7),
+table#merged-results.js-sort-7 tbody tr td:nth-child(8),
+table#merged-results.js-sort-8 tbody tr td:nth-child(9),
+table#merged-results.js-sort-9 tbody tr td:nth-child(10) {
     background: #dee;
 }
 
 /* Table for Video Generation Models and Vision-Language Models */
 #video-gen-results,
-#vision-lang-results {
+#vision-lang-results,
+#merged-results {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     border-collapse: collapse;
@@ -56,7 +67,8 @@ table#vision-lang-results.js-sort-9 tbody tr td:nth-child(10) {
 
 /*table header*/
 #video-gen-results th,
-#vision-lang-results th {
+#vision-lang-results th,
+#merged-results th {
     border: 1px solid #ddd;
     padding: 8px 12px;
     padding-top: 12px;
@@ -71,29 +83,34 @@ table#vision-lang-results.js-sort-9 tbody tr td:nth-child(10) {
 
 /* Force ARC AGI 2 column header to stay on one line */
 #video-gen-results thead td:nth-child(10),
-#vision-lang-results thead td:nth-child(10) {
+#vision-lang-results thead td:nth-child(10),
+#merged-results thead td:nth-child(10) {
     white-space: nowrap;
 }
 
 #video-gen-results td,
-#vision-lang-results td {
+#vision-lang-results td,
+#merged-results td {
     border: 1px solid #ddd;
     padding: 8px 12px;
 }
 
 /* Model name column should not wrap */
 #video-gen-results td:nth-child(2),
-#vision-lang-results td:nth-child(2) {
+#vision-lang-results td:nth-child(2),
+#merged-results td:nth-child(2) {
     white-space: nowrap;
 }
 
 #video-gen-results tr:nth-child(even),
-#vision-lang-results tr:nth-child(even) {
+#vision-lang-results tr:nth-child(even),
+#merged-results tr:nth-child(even) {
     background-color: #f5f5f5;
 }
 
 #video-gen-results tr:hover,
-#vision-lang-results tr:hover {
+#vision-lang-results tr:hover,
+#merged-results tr:hover {
     background-color: #ddd;
 }
 
