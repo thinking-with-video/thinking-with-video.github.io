@@ -953,7 +953,7 @@ James buys a plane.  The plane cost $150,000.  He pays $5000 a month to rent a h
         </div>
 
         <!-- Note for Merged Table Mode -->
-        <div id="merged-note" style="display: none; text-align: left; margin-top: 1rem; font-size: 16px; line-height: 1.5; color: #000; max-width: 100%; margin-left: auto; margin-right: auto;">
+        <div id="merged-note" style="display: none; text-align: left; margin-top: 1rem; font-size: 16px; line-height: 1.5; color: #000; max-width: 1200px; margin-left: auto; margin-right: auto;">
           <p><strong>Note:</strong><br>
           <strong>Model Type:</strong> Video🎞️: Video Generation Model; Image🖼️: Image Generation Model; VLM📃: Vision-Language Model<br>
           <strong>"Eyeballing Point/Line/Shape"</strong> refer to Point Tasks, Line Tasks and Shape Tasks in <a href="https://github.com/betmma/VLMPuzzle?tab=readme-ov-file#eyeballing-puzzles">Eyeballing Puzzles</a>. The results of video generation models are <em>Major Frame</em> evaluation results.<br>
@@ -961,10 +961,38 @@ James buys a plane.  The plane cost $150,000.  He pays $5000 a month to rent a h
         </div>
 
         <!-- Note for Separate Tables Mode -->
-        <div id="separate-note" style="text-align: left; margin-top: 1rem; font-size: 16px; line-height: 1.5; color: #000; max-width: 100%; margin-left: auto; margin-right: auto;">
+        <div id="separate-note" style="text-align: left; margin-top: 1rem; font-size: 16px; line-height: 1.5; color: #000; max-width: 1200px; margin-left: auto; margin-right: auto;">
           <p><strong>Note:</strong><br>
           <strong>"Eyeballing Point/Line/Shape"</strong> refer to Point Tasks, Line Tasks and Shape Tasks in <a href="https://github.com/betmma/VLMPuzzle?tab=readme-ov-file#eyeballing-puzzles">Eyeballing Puzzles</a>. The results of video generation models are <em>Major Frame</em> evaluation results.<br>
           <strong>"Visual Symmetry/Gradient/Compositionality"</strong> refer to the Symmetry Tasks, Gradient Tasks and Compositionality Tasks in <a href="https://github.com/tongjingqi/Thinking-with-Video/tree/main/visual_puzzles">Visual Puzzles</a>.</p>
+        </div>
+      </div>
+
+      <!-- Leaderboard Test Section -->
+      <div class="leaderboard-section" id="leaderboard-test">
+        <h2 class="section-header">Leaderboard on VideoThinkBench (test)</h2>
+        
+        <!-- Merged Table (shown when MERGE_LEADERBOARD_TABLES = true) -->
+        <div class="table-container" id="merged-table-container-test" style="display: none;">
+          <div id="merged-leaderboard-test"></div>
+        </div>
+
+        <!-- Separate Tables (shown when MERGE_LEADERBOARD_TABLES = false) -->
+        <div id="separate-tables-container-test">
+          <h3 class="leaderboard-subtitle">Video Generation Models</h3>
+          <div class="table-container">
+            <div id="video-gen-leaderboard-test"></div>
+          </div>
+
+          <h3 class="leaderboard-subtitle">Image Generation Models</h3>
+          <div class="table-container">
+            <div id="image-gen-leaderboard-test"></div>
+          </div>
+
+          <h3 class="leaderboard-subtitle">Vision-Language Models</h3>
+          <div class="table-container">
+            <div id="vision-lang-leaderboard-test"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -1355,7 +1383,8 @@ James buys a plane.  The plane cost $150,000.  He pays $5000 a month to rent a h
     
     <!-- Leaderboard Scripts -->
     <script type="text/javascript" src="./js/sort-table.js"></script>
-    <script src="./data/model_scores.js"></script>
+    <script src="./data/model_scores_minitest.js"></script>
+    <script src="./data/model_scores_test.js"></script>
     <script src="./js/leaderboard.js"></script>
     
   </body>

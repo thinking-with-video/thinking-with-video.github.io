@@ -62,3 +62,13 @@ Video Generation Models (Video🎞️)
 * **Visual Puzzles**
   * **Visual Symmetry/Gradient/Compositionality in the table.** They refer to the Symmetry Tasks, Gradient Tasks and Compositionality Tasks in Visual Puzzles.
 
+
+
+
+
+|  #   |       Model       | Model Type | Average | Eyeballing Point | Eyeballing Line | Eyeballing Shape | Visual Symmetry | Visual Gradient | Visual Compositionality | ARC-AGI-2 |
+| :--: | :---------------: | :--------: | :-----: | :--------------: | :-------------: | :--------------: | :-------------: | :-------------: | :---------------------: | :-------: |
+|  1   | Claude Sonnet 4.5 |    VLM📃    |   50    |        36        |       26        |        51        |       80        |       70        |           82            |    5.3    |
+|  2   |     GPT5 high     |    VLM📃    |  48.9   |        34        |       24        |        33        |       99        |       67        |           85            |    0.5    |
+|  3   |  Gemini 2.5 Pro   |    VLM📃    |  47.4   |        28        |       21        |        35        |       95        |       84        |           67            |    1.9    |
+|  4   |      Sora 2       |   Video🎞️   |  44.5   |        45        |       38        |        35        |       82        |       52        |           58            |    1.3    |

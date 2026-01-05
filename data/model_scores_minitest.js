@@ -1,5 +1,5 @@
 // Video Generation Models Scores
-var video_gen_scores = {
+var video_gen_scores_minitest = {
   "1": {
     "Model": "Sora 2",
     "Average": 40.1,
@@ -58,7 +58,7 @@ var video_gen_scores = {
 };
 
 // Image Generation Models Scores
-var image_gen_scores = {
+var image_gen_scores_minitest = {
   "1": {
     "Model": "Nano Banana 2",
     // "Model": "Gemini 3 Pro Image (Nano Banana 2)",
@@ -96,7 +96,7 @@ var image_gen_scores = {
 };
 
 // Vision-Language Models Scores
-var vision_lang_scores = {
+var vision_lang_scores_minitest = {
   "1": {
     "Model": "Claude Sonnet 4.5",
     "Average": 53.2,
