@@ -279,11 +279,15 @@ window.addEventListener('DOMContentLoaded', function() {
     // Merged table mode
     document.getElementById('merged-table-container').style.display = 'flex';
     document.getElementById('separate-tables-container').style.display = 'none';
+    document.getElementById('merged-note').style.display = 'block';
+    document.getElementById('separate-note').style.display = 'none';
     generateMergedTable();
   } else {
     // Separate tables mode
     document.getElementById('merged-table-container').style.display = 'none';
     document.getElementById('separate-tables-container').style.display = 'block';
+    document.getElementById('merged-note').style.display = 'none';
+    document.getElementById('separate-note').style.display = 'block';
     generateVideoGenTable();
     generateImageGenTable();
     generateVisionLangTable();
