@@ -97,6 +97,9 @@ function generateMergedTable() {
     table += `<td>${entry["Visual Gradient"]}</td>`;
     table += `<td>${entry["Visual Compositionality"]}</td>`;
     table += `<td>${entry["ARC-AGI-2"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Square"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Hexagon"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Labyrinth"].toFixed(1)}</td>`;
     table += '</tr>';
   }
   
@@ -121,6 +124,9 @@ function generateVideoGenTable() {
           <td class="js-sort-number"><strong>Visual Gradient</strong></td>
           <td class="js-sort-number"><strong>Visual Compositionality</strong></td>
           <td class="js-sort-number"><strong>ARC&nbsp;AGI&nbsp;2</strong></td>
+          <td class="js-sort-number"><strong>Maze Square</strong></td>
+          <td class="js-sort-number"><strong>Maze Hexagon</strong></td>
+          <td class="js-sort-number"><strong>Maze Labyrinth</strong></td>
       </tr></thead><tbody>`;
 
   var keys = Object.keys(data);
@@ -156,6 +162,9 @@ function generateVideoGenTable() {
     table += `<td>${entry["Visual Gradient"]}</td>`;
     table += `<td>${entry["Visual Compositionality"]}</td>`;
     table += `<td>${entry["ARC-AGI-2"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Square"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Hexagon"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Labyrinth"].toFixed(1)}</td>`;
     table += '</tr>';
   }
   
@@ -180,6 +189,9 @@ function generateImageGenTable() {
           <td class="js-sort-number"><strong>Visual Gradient</strong></td>
           <td class="js-sort-number"><strong>Visual Compositionality</strong></td>
           <td class="js-sort-number"><strong>ARC&nbsp;AGI&nbsp;2</strong></td>
+          <td class="js-sort-number"><strong>Maze Square</strong></td>
+          <td class="js-sort-number"><strong>Maze Hexagon</strong></td>
+          <td class="js-sort-number"><strong>Maze Labyrinth</strong></td>
       </tr></thead><tbody>`;
 
   var keys = Object.keys(data);
@@ -215,6 +227,9 @@ function generateImageGenTable() {
     table += `<td>${entry["Visual Gradient"]}</td>`;
     table += `<td>${entry["Visual Compositionality"]}</td>`;
     table += `<td>${entry["ARC-AGI-2"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Square"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Hexagon"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Labyrinth"].toFixed(1)}</td>`;
     table += '</tr>';
   }
   
@@ -239,6 +254,9 @@ function generateVisionLangTable() {
           <td class="js-sort-number"><strong>Visual Gradient</strong></td>
           <td class="js-sort-number"><strong>Visual Compositionality</strong></td>
           <td class="js-sort-number"><strong>ARC&nbsp;AGI&nbsp;2</strong></td>
+          <td class="js-sort-number"><strong>Maze Square</strong></td>
+          <td class="js-sort-number"><strong>Maze Hexagon</strong></td>
+          <td class="js-sort-number"><strong>Maze Labyrinth</strong></td>
       </tr></thead><tbody>`;
 
   var keys = Object.keys(data);
@@ -274,6 +292,9 @@ function generateVisionLangTable() {
     table += `<td>${entry["Visual Gradient"]}</td>`;
     table += `<td>${entry["Visual Compositionality"]}</td>`;
     table += `<td>${entry["ARC-AGI-2"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Square"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Hexagon"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Labyrinth"].toFixed(1)}</td>`;
     table += '</tr>';
   }
   
@@ -370,6 +391,9 @@ function generateMergedTableTest() {
           <td class="js-sort-number"><strong>Visual Gradient</strong></td>
           <td class="js-sort-number"><strong>Visual Compositionality</strong></td>
           <td class="js-sort-number"><strong>ARC&nbsp;AGI&nbsp;2</strong></td>
+          <td class="js-sort-number"><strong>Maze Square</strong></td>
+          <td class="js-sort-number"><strong>Maze Hexagon</strong></td>
+          <td class="js-sort-number"><strong>Maze Labyrinth</strong></td>
       </tr></thead><tbody>`;
   
   // Generate rows
@@ -405,6 +429,9 @@ function generateMergedTableTest() {
     table += `<td>${entry["Visual Gradient"]}</td>`;
     table += `<td>${entry["Visual Compositionality"]}</td>`;
     table += `<td>${entry["ARC-AGI-2"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Square"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Hexagon"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Labyrinth"].toFixed(1)}</td>`;
     table += '</tr>';
   }
   
@@ -429,6 +456,9 @@ function generateVideoGenTableTest() {
           <td class="js-sort-number"><strong>Visual Gradient</strong></td>
           <td class="js-sort-number"><strong>Visual Compositionality</strong></td>
           <td class="js-sort-number"><strong>ARC&nbsp;AGI&nbsp;2</strong></td>
+          <td class="js-sort-number"><strong>Maze Square</strong></td>
+          <td class="js-sort-number"><strong>Maze Hexagon</strong></td>
+          <td class="js-sort-number"><strong>Maze Labyrinth</strong></td>
       </tr></thead><tbody>`;
 
   var keys = Object.keys(data);
@@ -464,6 +494,9 @@ function generateVideoGenTableTest() {
     table += `<td>${entry["Visual Gradient"]}</td>`;
     table += `<td>${entry["Visual Compositionality"]}</td>`;
     table += `<td>${entry["ARC-AGI-2"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Square"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Hexagon"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Labyrinth"].toFixed(1)}</td>`;
     table += '</tr>';
   }
   
@@ -488,6 +521,9 @@ function generateImageGenTableTest() {
           <td class="js-sort-number"><strong>Visual Gradient</strong></td>
           <td class="js-sort-number"><strong>Visual Compositionality</strong></td>
           <td class="js-sort-number"><strong>ARC&nbsp;AGI&nbsp;2</strong></td>
+          <td class="js-sort-number"><strong>Maze Square</strong></td>
+          <td class="js-sort-number"><strong>Maze Hexagon</strong></td>
+          <td class="js-sort-number"><strong>Maze Labyrinth</strong></td>
       </tr></thead><tbody>`;
 
   var keys = Object.keys(data);
@@ -523,6 +559,9 @@ function generateImageGenTableTest() {
     table += `<td>${entry["Visual Gradient"]}</td>`;
     table += `<td>${entry["Visual Compositionality"]}</td>`;
     table += `<td>${entry["ARC-AGI-2"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Square"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Hexagon"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Labyrinth"].toFixed(1)}</td>`;
     table += '</tr>';
   }
   
@@ -547,6 +586,9 @@ function generateVisionLangTableTest() {
           <td class="js-sort-number"><strong>Visual Gradient</strong></td>
           <td class="js-sort-number"><strong>Visual Compositionality</strong></td>
           <td class="js-sort-number"><strong>ARC&nbsp;AGI&nbsp;2</strong></td>
+          <td class="js-sort-number"><strong>Maze Square</strong></td>
+          <td class="js-sort-number"><strong>Maze Hexagon</strong></td>
+          <td class="js-sort-number"><strong>Maze Labyrinth</strong></td>
       </tr></thead><tbody>`;
 
   var keys = Object.keys(data);
@@ -582,6 +624,9 @@ function generateVisionLangTableTest() {
     table += `<td>${entry["Visual Gradient"]}</td>`;
     table += `<td>${entry["Visual Compositionality"]}</td>`;
     table += `<td>${entry["ARC-AGI-2"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Square"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Hexagon"].toFixed(1)}</td>`;
+    table += `<td>${entry["Maze Labyrinth"].toFixed(1)}</td>`;
     table += '</tr>';
   }
   
