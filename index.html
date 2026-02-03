@@ -794,10 +794,104 @@
       :root {
         --UCLA-darkblue: #2774AE;
       }
+
+      /* More Research Dropdown Styles */
+      .more-research-container {
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem 0 0.3rem;
+      }
+
+      .more-research-dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .more-research-trigger {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+        cursor: pointer;
+        padding: 0.3rem 0.6rem;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+        text-decoration: none;
+      }
+
+      .more-research-trigger:hover {
+        background: rgba(0, 0, 0, 0.05);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .more-research-trigger i {
+        font-size: 0.75rem;
+        transition: transform 0.2s ease;
+      }
+
+      .more-research-dropdown:hover .more-research-trigger i {
+        transform: rotate(180deg);
+      }
+
+      .more-research-menu {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #fff;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        min-width: 200px;
+        padding: 0.5rem 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.2s ease;
+        z-index: 1000;
+      }
+
+      .more-research-dropdown:hover .more-research-menu {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .more-research-menu a {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: var(--text-primary);
+        text-decoration: none;
+        font-size: 0.85rem;
+        transition: background 0.15s ease;
+        white-space: nowrap;
+      }
+
+      .more-research-menu a:hover {
+        background: rgba(102, 126, 234, 0.1);
+      }
+
+      .more-research-menu a .paper-venue {
+        color: var(--accent-color);
+        font-weight: 600;
+      }
     </style>
   </head>
   <body>
     <div class="content-wrapper">
+      <!-- More Research Dropdown -->
+      <div class="more-research-container">
+        <div class="more-research-dropdown">
+          <span class="more-research-trigger">
+            More Research <i class="fas fa-chevron-down"></i>
+          </span>
+          <div class="more-research-menu">
+            <a href="https://github.com/tongjingqi/Game-RL" target="_blank" rel="noopener noreferrer">
+              <span class="paper-venue">[ICLR 2026]</span> Game-RL
+            </a>
+          </div>
+        </div>
+      </div>
+
       <header>
         <h1>Thinking with Video: Video Generation as a Promising Multimodal Reasoning Paradigm</h1>
         <div class="authors">
