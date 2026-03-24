@@ -419,23 +419,23 @@ function generateMergedTableTest() {
     if (HIGHLIGHT_TOP_MODELS_TEST && rank <= 3) {
       table += `<td><b class="best-score-text">${modelName}</b></td>`;
       table += `<td>${entry.ModelType}</td>`;
-      table += `<td><b class="best-score-text">${entry.Average.toFixed(1)}</b></td>`;
+      table += `<td><b class="best-score-text">${formatScoreOneDecimal(entry.Average)}</b></td>`;
     } else {
       table += `<td><b>${modelName}</b></td>`;
       table += `<td>${entry.ModelType}</td>`;
-      table += `<td><b>${entry.Average.toFixed(1)}</b></td>`;
+      table += `<td><b>${formatScoreOneDecimal(entry.Average)}</b></td>`;
     }
     
-    table += `<td>${entry["Eyeballing Point"]}</td>`;
-    table += `<td>${entry["Eyeballing Line"]}</td>`;
-    table += `<td>${entry["Eyeballing Shape"]}</td>`;
-    table += `<td>${entry["Visual Symmetry"]}</td>`;
-    table += `<td>${entry["Visual Gradient"]}</td>`;
-    table += `<td>${entry["Visual Compositionality"]}</td>`;
-    table += `<td>${entry["ARC-AGI-2"].toFixed(1)}</td>`;
-    table += `<td>${entry["Maze Square"].toFixed(1)}</td>`;
-    table += `<td>${entry["Maze Hexagon"].toFixed(1)}</td>`;
-    table += `<td>${entry["Maze Labyrinth"].toFixed(1)}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Eyeballing Point"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Eyeballing Line"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Eyeballing Shape"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Visual Symmetry"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Visual Gradient"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Visual Compositionality"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["ARC-AGI-2"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Maze Square"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Maze Hexagon"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Maze Labyrinth"])}</td>`;
     table += '</tr>';
   }
   
@@ -485,22 +485,22 @@ function generateVideoGenTableTest() {
     // Highlight top 3 with red text if HIGHLIGHT_TOP_MODELS_TEST is enabled
     if (HIGHLIGHT_TOP_MODELS_TEST && topRanks.includes(key)) {
       table += `<td><b class="best-score-text">${modelName}</b></td>`;
-      table += `<td><b class="best-score-text">${entry.Average.toFixed(1)}</b></td>`;
+      table += `<td><b class="best-score-text">${formatScoreOneDecimal(entry.Average)}</b></td>`;
     } else {
       table += `<td><b>${modelName}</b></td>`;
-      table += `<td><b>${entry.Average.toFixed(1)}</b></td>`;
+      table += `<td><b>${formatScoreOneDecimal(entry.Average)}</b></td>`;
     }
     
-    table += `<td>${entry["Eyeballing Point"]}</td>`;
-    table += `<td>${entry["Eyeballing Line"]}</td>`;
-    table += `<td>${entry["Eyeballing Shape"]}</td>`;
-    table += `<td>${entry["Visual Symmetry"]}</td>`;
-    table += `<td>${entry["Visual Gradient"]}</td>`;
-    table += `<td>${entry["Visual Compositionality"]}</td>`;
-    table += `<td>${entry["ARC-AGI-2"].toFixed(1)}</td>`;
-    table += `<td>${entry["Maze Square"].toFixed(1)}</td>`;
-    table += `<td>${entry["Maze Hexagon"].toFixed(1)}</td>`;
-    table += `<td>${entry["Maze Labyrinth"].toFixed(1)}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Eyeballing Point"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Eyeballing Line"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Eyeballing Shape"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Visual Symmetry"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Visual Gradient"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Visual Compositionality"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["ARC-AGI-2"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Maze Square"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Maze Hexagon"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Maze Labyrinth"])}</td>`;
     table += '</tr>';
   }
   
@@ -550,22 +550,22 @@ function generateImageGenTableTest() {
     // Highlight top 3 with red text if HIGHLIGHT_TOP_MODELS_TEST is enabled
     if (HIGHLIGHT_TOP_MODELS_TEST && topRanks.includes(key)) {
       table += `<td><b class="best-score-text">${modelName}</b></td>`;
-      table += `<td><b class="best-score-text">${entry.Average.toFixed(1)}</b></td>`;
+      table += `<td><b class="best-score-text">${formatScoreOneDecimal(entry.Average)}</b></td>`;
     } else {
       table += `<td><b>${modelName}</b></td>`;
-      table += `<td><b>${entry.Average.toFixed(1)}</b></td>`;
+      table += `<td><b>${formatScoreOneDecimal(entry.Average)}</b></td>`;
     }
     
-    table += `<td>${entry["Eyeballing Point"]}</td>`;
-    table += `<td>${entry["Eyeballing Line"]}</td>`;
-    table += `<td>${entry["Eyeballing Shape"]}</td>`;
-    table += `<td>${entry["Visual Symmetry"]}</td>`;
-    table += `<td>${entry["Visual Gradient"]}</td>`;
-    table += `<td>${entry["Visual Compositionality"]}</td>`;
-    table += `<td>${entry["ARC-AGI-2"].toFixed(1)}</td>`;
-    table += `<td>${entry["Maze Square"].toFixed(1)}</td>`;
-    table += `<td>${entry["Maze Hexagon"].toFixed(1)}</td>`;
-    table += `<td>${entry["Maze Labyrinth"].toFixed(1)}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Eyeballing Point"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Eyeballing Line"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Eyeballing Shape"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Visual Symmetry"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Visual Gradient"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Visual Compositionality"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["ARC-AGI-2"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Maze Square"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Maze Hexagon"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Maze Labyrinth"])}</td>`;
     table += '</tr>';
   }
   
@@ -615,22 +615,22 @@ function generateVisionLangTableTest() {
     // Highlight top 3 with red text if HIGHLIGHT_TOP_MODELS_TEST is enabled
     if (HIGHLIGHT_TOP_MODELS_TEST && topRanks.includes(key)) {
       table += `<td><b class="best-score-text">${modelName}</b></td>`;
-      table += `<td><b class="best-score-text">${entry.Average.toFixed(1)}</b></td>`;
+      table += `<td><b class="best-score-text">${formatScoreOneDecimal(entry.Average)}</b></td>`;
     } else {
       table += `<td><b>${modelName}</b></td>`;
-      table += `<td><b>${entry.Average.toFixed(1)}</b></td>`;
+      table += `<td><b>${formatScoreOneDecimal(entry.Average)}</b></td>`;
     }
     
-    table += `<td>${entry["Eyeballing Point"]}</td>`;
-    table += `<td>${entry["Eyeballing Line"]}</td>`;
-    table += `<td>${entry["Eyeballing Shape"]}</td>`;
-    table += `<td>${entry["Visual Symmetry"]}</td>`;
-    table += `<td>${entry["Visual Gradient"]}</td>`;
-    table += `<td>${entry["Visual Compositionality"]}</td>`;
-    table += `<td>${entry["ARC-AGI-2"].toFixed(1)}</td>`;
-    table += `<td>${entry["Maze Square"].toFixed(1)}</td>`;
-    table += `<td>${entry["Maze Hexagon"].toFixed(1)}</td>`;
-    table += `<td>${entry["Maze Labyrinth"].toFixed(1)}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Eyeballing Point"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Eyeballing Line"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Eyeballing Shape"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Visual Symmetry"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Visual Gradient"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Visual Compositionality"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["ARC-AGI-2"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Maze Square"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Maze Hexagon"])}</td>`;
+    table += `<td>${formatScoreOneDecimal(entry["Maze Labyrinth"])}</td>`;
     table += '</tr>';
   }
   
