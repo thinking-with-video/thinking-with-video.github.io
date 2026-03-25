@@ -224,3 +224,87 @@ table#merged-results-test.js-sort-10 tbody tr td:nth-child(11) {
     color: #C6011F;
     /* color: #3457D5 */
 }
+
+/* Text-Centric minitest tables: keep visual style consistent with Vision-Centric tables */
+table#video-gen-results-text-minitest.js-sort-0 tbody tr td:nth-child(1),
+table#video-gen-results-text-minitest.js-sort-1 tbody tr td:nth-child(2),
+table#video-gen-results-text-minitest.js-sort-2 tbody tr td:nth-child(3),
+table#video-gen-results-text-minitest.js-sort-3 tbody tr td:nth-child(4),
+table#video-gen-results-text-minitest.js-sort-4 tbody tr td:nth-child(5),
+table#video-gen-results-text-minitest.js-sort-5 tbody tr td:nth-child(6),
+table#video-gen-results-text-minitest.js-sort-6 tbody tr td:nth-child(7),
+table#video-gen-results-text-minitest.js-sort-7 tbody tr td:nth-child(8),
+table#video-gen-results-text-minitest.js-sort-8 tbody tr td:nth-child(9),
+table#video-gen-results-text-minitest.js-sort-9 tbody tr td:nth-child(10),
+table#video-gen-results-text-minitest.js-sort-10 tbody tr td:nth-child(11),
+table#video-gen-results-text-minitest.js-sort-11 tbody tr td:nth-child(12),
+table#video-gen-results-text-minitest.js-sort-12 tbody tr td:nth-child(13),
+table#video-gen-results-text-minitest.js-sort-13 tbody tr td:nth-child(14),
+table#video-gen-results-text-minitest.js-sort-14 tbody tr td:nth-child(15),
+table#video-gen-results-text-minitest.js-sort-15 tbody tr td:nth-child(16),
+table#vision-lang-results-text-minitest.js-sort-0 tbody tr td:nth-child(1),
+table#vision-lang-results-text-minitest.js-sort-1 tbody tr td:nth-child(2),
+table#vision-lang-results-text-minitest.js-sort-2 tbody tr td:nth-child(3),
+table#vision-lang-results-text-minitest.js-sort-3 tbody tr td:nth-child(4),
+table#vision-lang-results-text-minitest.js-sort-4 tbody tr td:nth-child(5),
+table#vision-lang-results-text-minitest.js-sort-5 tbody tr td:nth-child(6),
+table#vision-lang-results-text-minitest.js-sort-6 tbody tr td:nth-child(7),
+table#vision-lang-results-text-minitest.js-sort-7 tbody tr td:nth-child(8),
+table#vision-lang-results-text-minitest.js-sort-8 tbody tr td:nth-child(9),
+table#vision-lang-results-text-minitest.js-sort-9 tbody tr td:nth-child(10),
+table#vision-lang-results-text-minitest.js-sort-10 tbody tr td:nth-child(11),
+table#vision-lang-results-text-minitest.js-sort-11 tbody tr td:nth-child(12),
+table#vision-lang-results-text-minitest.js-sort-12 tbody tr td:nth-child(13),
+table#vision-lang-results-text-minitest.js-sort-13 tbody tr td:nth-child(14),
+table#vision-lang-results-text-minitest.js-sort-14 tbody tr td:nth-child(15),
+table#vision-lang-results-text-minitest.js-sort-15 tbody tr td:nth-child(16) {
+    background: #dee;
+}
+
+#video-gen-results-text-minitest,
+#vision-lang-results-text-minitest {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-collapse: collapse;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+#video-gen-results-text-minitest th,
+#vision-lang-results-text-minitest th {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    background-color: var(--UCLA-darkblue);
+    color: white;
+    white-space: nowrap;
+}
+
+#video-gen-results-text-minitest td,
+#vision-lang-results-text-minitest td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+}
+
+#video-gen-results-text-minitest td:nth-child(2),
+#vision-lang-results-text-minitest td:nth-child(2) {
+    white-space: nowrap;
+}
+
+#video-gen-results-text-minitest tr:nth-child(even),
+#vision-lang-results-text-minitest tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+#video-gen-results-text-minitest tr:hover,
+#vision-lang-results-text-minitest tr:hover {
+    background-color: #ddd;
+}
