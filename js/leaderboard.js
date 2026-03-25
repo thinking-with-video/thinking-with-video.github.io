@@ -14,6 +14,22 @@ function formatScoreOneDecimal(value) {
   return Number(value).toFixed(1);
 }
 
+var TEXT_CENTRIC_SUBSETS_MINITEST = [
+  'GSM8K',
+  'MATH-500',
+  'AIME24',
+  'AIME25',
+  'BBH',
+  'MMLU',
+  'MMLU-Pro',
+  'GPQA',
+  'SuperGPQA',
+  'MathVista',
+  'MathVision',
+  'MMBench',
+  'MMMU'
+];
+
 // ==================== MINITEST LEADERBOARD ====================
 
 // Generate merged leaderboard table (minitest)
@@ -306,6 +322,76 @@ function generateVisionLangTable() {
   document.getElementById('vision-lang-leaderboard').innerHTML = table;
 }
 
+function renderTextCentricTableMinitest(data, containerId, tableId) {
+  var keys = Object.keys(data);
+  if (!keys.length) {
+    document.getElementById(containerId).innerHTML = '<p style="font-size: 1.6rem; margin: 0.6rem 0 1.6rem;">暂无。</p>';
+    return;
+  }
+
+  var table = '<table class="js-sort-table" id="' + tableId + '">';
+  table += '<thead><tr>';
+  table += '<td class="js-sort-number"><strong>#</strong></td>';
+  table += '<td class="js-sort"><strong>Model</strong></td>';
+  table += '<td class="js-sort-number"><strong><u>Average</u></strong></td>';
+
+  for (var i = 0; i < TEXT_CENTRIC_SUBSETS_MINITEST.length; i++) {
+    table += '<td class="js-sort-number"><strong>' + TEXT_CENTRIC_SUBSETS_MINITEST[i] + '</strong></td>';
+  }
+
+  table += '</tr></thead><tbody>';
+
+  var topRanks = ['1', '2', '3'];
+  for (var j = 0; j < keys.length; j++) {
+    var key = keys[j];
+    var entry = data[key];
+    var modelName = entry.Model;
+
+    if (HIGHLIGHT_TOP_MODELS_MINITEST && topRanks.includes(key)) {
+      var medals = { '1': '🥇', '2': '🥈', '3': '🥉' };
+      modelName = entry.Model + medals[key];
+    }
+
+    table += '<tr>';
+    table += '<td>' + key + '</td>';
+    if (HIGHLIGHT_TOP_MODELS_MINITEST && topRanks.includes(key)) {
+      table += '<td><b class="best-score-text">' + modelName + '</b></td>';
+      table += '<td><b class="best-score-text">' + formatScoreOneDecimal(entry.Average) + '</b></td>';
+    } else {
+      table += '<td><b>' + modelName + '</b></td>';
+      table += '<td><b>' + formatScoreOneDecimal(entry.Average) + '</b></td>';
+    }
+
+    for (var k = 0; k < TEXT_CENTRIC_SUBSETS_MINITEST.length; k++) {
+      var subset = TEXT_CENTRIC_SUBSETS_MINITEST[k];
+      table += '<td>' + formatScoreOneDecimal(entry[subset]) + '</td>';
+    }
+
+    table += '</tr>';
+  }
+
+  table += '</tbody></table>';
+  document.getElementById(containerId).innerHTML = table;
+}
+
+function generateTextCentricMinitestTables() {
+  renderTextCentricTableMinitest(
+    video_gen_text_centric_scores_minitest,
+    'video-gen-leaderboard-text-minitest',
+    'video-gen-results-text-minitest'
+  );
+  renderTextCentricTableMinitest(
+    image_gen_text_centric_scores_minitest,
+    'image-gen-leaderboard-text-minitest',
+    'image-gen-results-text-minitest'
+  );
+  renderTextCentricTableMinitest(
+    vision_lang_text_centric_scores_minitest,
+    'vision-lang-leaderboard-text-minitest',
+    'vision-lang-results-text-minitest'
+  );
+}
+
 // Call the functions when the window loads
 window.addEventListener('DOMContentLoaded', function() {
   // Minitest tables
@@ -326,6 +412,8 @@ window.addEventListener('DOMContentLoaded', function() {
     generateImageGenTable();
     generateVisionLangTable();
   }
+
+  generateTextCentricMinitestTables();
   
   // Test tables
   if (MERGE_LEADERBOARD_TABLES_TEST) {
