@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^\\$csv = Import-Csv -Path \"data/VideoThinkBench详细结果整理_数据表_表格\\.csv\"; \\$text = \\$csv \\| Where-Object \\{ \\$_\\.'Task Category' -eq 'Text-Centric' \\}; \\$tasks = @\\('GSM8K','MATH-500','AIME24','AIME25','BBH','MMLU','MMLU-Pro','GPQA','SuperGPQA','MathVista','MathVision','MMBench','MMMU'\\); \\$groups = \\$text \\| Group-Object 'Model Type','Model','Metric'; \\$result = foreach\\(\\$g in \\$groups\\)\\{ \\$first = \\$g\\.Group\\[0\\]; \\$scores = @\\{\\}; foreach\\(\\$row in \\$g\\.Group\\)\\{ \\$s = \\(\\$row\\.Score -replace '\\[`r`n\\]',''\\)\\.Trim\\(\\); if\\(\\$s -match 'Untested'\\)\\{ \\$val = \\$null \\} else \\{ \\$val = \\[double\\]\\(\\(\\$s -replace '%',''\\)\\.Trim\\(\\)\\) \\}; \\$scores\\[\\$row\\.Task\\] = \\$val \\}; \\$vals = @\\(\\); foreach\\(\\$t in \\$tasks\\)\\{ if\\(\\$scores\\.ContainsKey\\(\\$t\\) -and \\$null -ne \\$scores\\[\\$t\\]\\)\\{ \\$vals \\+= \\$scores\\[\\$t\\] \\} \\}; \\$avg = if\\(\\$vals\\.Count -gt 0\\)\\{ \\[Math\\]::Round\\(\\(\\$vals \\| Measure-Object -Average\\)\\.Average,2\\)\\} else \\{ \\$null \\}; \\[PSCustomObject\\]@\\{ ModelType=\\$first\\.'Model Type'; Model=\\$first\\.Model; Metric=\\$first\\.Metric; Count=\\$vals\\.Count; Avg=\\$avg; Missing=\\(\\$tasks \\| Where-Object \\{ -not \\$scores\\.ContainsKey\\(\\$_\\) -or \\$null -eq \\$scores\\[\\$_\\] \\}\\) -join '; ' \\} \\}; \\$result \\| Sort-Object ModelType,Model,Metric \\| Format-Table -AutoSize \\| Out-String$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
