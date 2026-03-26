@@ -798,6 +798,15 @@
         color: var(--text-primary);
       }
 
+      .leaderboard-subtitle-minor {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-top: 1.5rem;
+        margin-bottom: 0.9rem;
+        text-align: center;
+        color: var(--text-primary);
+      }
+
       .table-container {
         margin-bottom: 2rem;
         display: flex;
@@ -1087,7 +1096,8 @@ James buys a plane.  The plane cost $150,000.  He pays $5000 a month to rent a h
 
       <!-- Leaderboard Section -->
       <div class="leaderboard-section" id="leaderboard">
-        <h2 class="section-header">Leaderboard on VideoThinkBench Vision-Centric Tasks (minitest)</h2>
+        <h2 class="section-header">Leaderboard on VideoThinkBench (minitest)</h2>
+        <h3 class="leaderboard-subtitle">Vision-Centric Tasks</h3>
         
         <!-- Merged Table (shown when MERGE_LEADERBOARD_TABLES = true) -->
         <div class="table-container" id="merged-table-container" style="display: none;">
@@ -1096,17 +1106,17 @@ James buys a plane.  The plane cost $150,000.  He pays $5000 a month to rent a h
 
         <!-- Separate Tables (shown when MERGE_LEADERBOARD_TABLES = false) -->
         <div id="separate-tables-container">
-          <h3 class="leaderboard-subtitle">Video Generation Models</h3>
+          <h4 class="leaderboard-subtitle-minor">Video Generation Models</h4>
           <div class="table-container">
             <div id="video-gen-leaderboard"></div>
           </div>
 
-          <h3 class="leaderboard-subtitle">Image Generation Models</h3>
+          <h4 class="leaderboard-subtitle-minor">Image Generation Models</h4>
           <div class="table-container">
             <div id="image-gen-leaderboard"></div>
           </div>
 
-          <h3 class="leaderboard-subtitle">Vision-Language Models</h3>
+          <h4 class="leaderboard-subtitle-minor">Vision-Language Models</h4>
           <div class="table-container">
             <div id="vision-lang-leaderboard"></div>
           </div>
@@ -1128,22 +1138,20 @@ James buys a plane.  The plane cost $150,000.  He pays $5000 a month to rent a h
           <strong>"Visual Symmetry/Gradient/Compositionality"</strong> refer to the Symmetry Tasks, Gradient Tasks and Compositionality Tasks in <a href="https://github.com/tongjingqi/Thinking-with-Video/tree/main/visual_puzzles">Visual Puzzles</a>.<br>
           <strong>"Maze Square/Hexagon/Labyrinth"</strong> refer to Square Maze, Hexagon Maze and Labyrinth Maze in <a href="https://github.com/betmma/VLMPuzzle?tab=readme-ov-file#maze-families">Maze Tasks</a>.</p>
         </div>
-      </div>
 
-      <div class="leaderboard-section" id="leaderboard-text-centric-minitest">
-        <h2 class="section-header">Leaderboard on VideoThinkBench Text-Centric Tasks (minitest)</h2>
+        <h3 class="leaderboard-subtitle">Text-Centric Tasks</h3>
 
-        <h3 class="leaderboard-subtitle">Video Generation Models</h3>
+        <h4 class="leaderboard-subtitle-minor">Video Generation Models</h4>
         <div class="table-container">
           <div id="video-gen-leaderboard-text-minitest"></div>
         </div>
 
-        <h3 class="leaderboard-subtitle">Image Generation Models</h3>
+        <h4 class="leaderboard-subtitle-minor">Image Generation Models</h4>
         <div class="table-container">
           <div id="image-gen-leaderboard-text-minitest"></div>
         </div>
 
-        <h3 class="leaderboard-subtitle">Vision-Language Models</h3>
+        <h4 class="leaderboard-subtitle-minor">Vision-Language Models</h4>
         <div class="table-container">
           <div id="vision-lang-leaderboard-text-minitest"></div>
         </div>
