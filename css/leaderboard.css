@@ -102,6 +102,34 @@ table#merged-results-test.js-sort-10 tbody tr td:nth-child(11) {
     background: #dee;
 }
 
+/* Maze columns sort-highlight (previously missing) */
+table#video-gen-results.js-sort-10 tbody tr td:nth-child(11),
+table#video-gen-results.js-sort-11 tbody tr td:nth-child(12),
+table#video-gen-results.js-sort-12 tbody tr td:nth-child(13),
+table#video-gen-results-test.js-sort-10 tbody tr td:nth-child(11),
+table#video-gen-results-test.js-sort-11 tbody tr td:nth-child(12),
+table#video-gen-results-test.js-sort-12 tbody tr td:nth-child(13),
+table#image-gen-results.js-sort-10 tbody tr td:nth-child(11),
+table#image-gen-results.js-sort-11 tbody tr td:nth-child(12),
+table#image-gen-results.js-sort-12 tbody tr td:nth-child(13),
+table#image-gen-results-test.js-sort-10 tbody tr td:nth-child(11),
+table#image-gen-results-test.js-sort-11 tbody tr td:nth-child(12),
+table#image-gen-results-test.js-sort-12 tbody tr td:nth-child(13),
+table#vision-lang-results.js-sort-10 tbody tr td:nth-child(11),
+table#vision-lang-results.js-sort-11 tbody tr td:nth-child(12),
+table#vision-lang-results.js-sort-12 tbody tr td:nth-child(13),
+table#vision-lang-results-test.js-sort-10 tbody tr td:nth-child(11),
+table#vision-lang-results-test.js-sort-11 tbody tr td:nth-child(12),
+table#vision-lang-results-test.js-sort-12 tbody tr td:nth-child(13),
+table#merged-results.js-sort-11 tbody tr td:nth-child(12),
+table#merged-results.js-sort-12 tbody tr td:nth-child(13),
+table#merged-results.js-sort-13 tbody tr td:nth-child(14),
+table#merged-results-test.js-sort-11 tbody tr td:nth-child(12),
+table#merged-results-test.js-sort-12 tbody tr td:nth-child(13),
+table#merged-results-test.js-sort-13 tbody tr td:nth-child(14) {
+    background: #dee;
+}
+
 /* Table for Video Generation Models and Vision-Language Models */
 #video-gen-results,
 #image-gen-results,
