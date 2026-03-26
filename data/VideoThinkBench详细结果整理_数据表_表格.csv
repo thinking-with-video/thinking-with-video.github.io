@@ -286,3 +286,16 @@ VGM (TI2VA),MOVA-720p,Text-Centric,Multimodal General Knowledge Reasoning,MMMU,L
 VGM (TI2VA),MOVA-720p,Text-Centric,Multimodal General Knowledge Reasoning,MMMU,Audio,5%
 VGM (TI2VA),MOVA-720p,Text-Centric,Multimodal General Knowledge Reasoning,MMMU,V ∩ A,0%
 VGM (TI2VA),MOVA-720p,Text-Centric,Multimodal General Knowledge Reasoning,MMMU,V ∪ A,15%
+UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Text-Only Math Reasoning,GSM8K,Accuracy,6.67%
+UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Text-Only Math Reasoning,MATH-500,Accuracy,0%
+UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Text-Only Math Reasoning,AIME24,Accuracy,0%
+UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Text-Only Math Reasoning,AIME25,Accuracy,0%
+UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Text-Only General Knowledge Reasoning,BBH,Accuracy,0%
+UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Text-Only General Knowledge Reasoning,MMLU,Accuracy,0%
+UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Text-Only General Knowledge Reasoning,MMLU-Pro,Accuracy,6.67%
+UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Text-Only General Knowledge Reasoning,GPQA,Accuracy,4%
+UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Text-Only General Knowledge Reasoning,SuperGPQA,Accuracy,2.86%
+UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Multimodal Math Reasoning,MathVista,Accuracy,25%
+UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Multimodal Math Reasoning,MathVision,Accuracy,40%
+UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Multimodal General Knowledge Reasoning,MMBench,Accuracy,10%
+UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Multimodal General Knowledge Reasoning,MMMU,Accuracy,20%

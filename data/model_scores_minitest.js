@@ -523,6 +523,23 @@ var image_gen_text_centric_scores_minitest = {
     "MathVision": 15.0,
     "MMBench": 30.0,
     "MMMU": 25.0
+  },
+  "5": {
+    "Model": "BAGEL (Image Output)",
+    "Average": 8.86,
+    "GSM8K": 6.67,
+    "MATH-500": 0.0,
+    "AIME24": 0.0,
+    "AIME25": 0.0,
+    "BBH": 0.0,
+    "MMLU": 0.0,
+    "MMLU-Pro": 6.67,
+    "GPQA": 4.0,
+    "SuperGPQA": 2.86,
+    "MathVista": 25.0,
+    "MathVision": 40.0,
+    "MMBench": 10.0,
+    "MMMU": 20.0
   }
 };
 
