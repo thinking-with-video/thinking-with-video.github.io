@@ -809,17 +809,18 @@
 
       .table-container {
         margin-bottom: 2rem;
-        display: block;
-        width: 100%;
-        overflow-x: auto;
-        overflow-y: hidden;
-        -webkit-overflow-scrolling: touch;
+        display: flex;
+        justify-content: center;
       }
 
-      .leaderboard-section .table-container {
-        width: calc(100vw - 2rem);
-        max-width: calc(100vw - 2rem);
-        margin-left: calc(50% - 50vw + 1rem);
+      @media (max-width: 1400px) {
+        .table-container {
+          display: block;
+          width: 100%;
+          overflow-x: auto;
+          overflow-y: hidden;
+          -webkit-overflow-scrolling: touch;
+        }
       }
       
       :root {
