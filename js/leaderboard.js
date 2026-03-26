@@ -14,6 +14,10 @@ function formatScoreOneDecimal(value) {
   return Number(value).toFixed(1);
 }
 
+function getMergedContainerDisplayMode() {
+  return window.matchMedia('(max-width: 1400px)').matches ? 'block' : 'flex';
+}
+
 var TEXT_CENTRIC_SUBSETS_MINITEST = [
   'GSM8K',
   'MATH-500',
@@ -397,7 +401,7 @@ window.addEventListener('DOMContentLoaded', function() {
   // Minitest tables
   if (MERGE_LEADERBOARD_TABLES_MINITEST) {
     // Merged table mode
-    document.getElementById('merged-table-container').style.display = 'block';
+    document.getElementById('merged-table-container').style.display = getMergedContainerDisplayMode();
     document.getElementById('separate-tables-container').style.display = 'none';
     document.getElementById('merged-note').style.display = 'block';
     document.getElementById('separate-note').style.display = 'none';
@@ -418,7 +422,7 @@ window.addEventListener('DOMContentLoaded', function() {
   // Test tables
   if (MERGE_LEADERBOARD_TABLES_TEST) {
     // Merged table mode
-    document.getElementById('merged-table-container-test').style.display = 'block';
+    document.getElementById('merged-table-container-test').style.display = getMergedContainerDisplayMode();
     document.getElementById('separate-tables-container-test').style.display = 'none';
     generateMergedTableTest();
   } else {
