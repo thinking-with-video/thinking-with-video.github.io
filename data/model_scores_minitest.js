@@ -266,7 +266,7 @@ var vision_lang_scores_minitest = {
 // Text-Centric Minitest Scores - Video Generation Models
 var video_gen_text_centric_scores_minitest = {
   "1": {
-    "Model": "Sora-2 Audio",
+    "Model": "Sora-2 (Audio)",
     "Average": 67.8,
     "GSM8K": 98.9,
     "MATH-500": 92.0,
@@ -283,7 +283,7 @@ var video_gen_text_centric_scores_minitest = {
     "MMMU": 69.2
   },
   "2": {
-    "Model": "Sora-2 Last Frame",
+    "Model": "Sora-2 (Last Frame)",
     "Average": 57.0,
     "GSM8K": 75.7,
     "MATH-500": 67.0,
@@ -300,7 +300,7 @@ var video_gen_text_centric_scores_minitest = {
     "MMMU": 38.3
   },
   "3": {
-    "Model": "Veo 3.1 Last Frame",
+    "Model": "Veo 3.1 (Last Frame)",
     "Average": 47.34,
     "GSM8K": 80.0,
     "MATH-500": 70.0,
@@ -317,7 +317,7 @@ var video_gen_text_centric_scores_minitest = {
     "MMMU": 45.0
   },
   "4": {
-    "Model": "Veo 3.1 Audio",
+    "Model": "Veo 3.1 (Audio)",
     "Average": 41.5,
     "GSM8K": 93.33,
     "MATH-500": 80.0,
@@ -351,7 +351,7 @@ var video_gen_text_centric_scores_minitest = {
     "MMMU": 20.0
   },
   "6": {
-    "Model": "MOVA-720p Last Frame",
+    "Model": "MOVA-720p (Last Frame)",
     "Average": 12.53,
     "GSM8K": 30.0,
     "MATH-500": 35.0,
@@ -368,7 +368,7 @@ var video_gen_text_centric_scores_minitest = {
     "MMMU": 10.0
   },
   "7": {
-    "Model": "MOVA-360p Last Frame",
+    "Model": "MOVA-360p (Last Frame)",
     "Average": 10.41,
     "GSM8K": 20.0,
     "MATH-500": 10.0,
@@ -385,7 +385,7 @@ var video_gen_text_centric_scores_minitest = {
     "MMMU": 10.0
   },
   "8": {
-    "Model": "MOVA-720p Audio",
+    "Model": "MOVA-720p (Audio)",
     "Average": 7.18,
     "GSM8K": 0.0,
     "MATH-500": 0.0,
@@ -402,7 +402,7 @@ var video_gen_text_centric_scores_minitest = {
     "MMMU": 5.0
   },
   "9": {
-    "Model": "MOVA-360p Audio",
+    "Model": "MOVA-360p (Audio)",
     "Average": 5.75,
     "GSM8K": 0.0,
     "MATH-500": 0.0,
