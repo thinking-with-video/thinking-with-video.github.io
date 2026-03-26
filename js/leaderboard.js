@@ -397,7 +397,7 @@ window.addEventListener('DOMContentLoaded', function() {
   // Minitest tables
   if (MERGE_LEADERBOARD_TABLES_MINITEST) {
     // Merged table mode
-    document.getElementById('merged-table-container').style.display = 'flex';
+    document.getElementById('merged-table-container').style.display = 'block';
     document.getElementById('separate-tables-container').style.display = 'none';
     document.getElementById('merged-note').style.display = 'block';
     document.getElementById('separate-note').style.display = 'none';
@@ -418,7 +418,7 @@ window.addEventListener('DOMContentLoaded', function() {
   // Test tables
   if (MERGE_LEADERBOARD_TABLES_TEST) {
     // Merged table mode
-    document.getElementById('merged-table-container-test').style.display = 'flex';
+    document.getElementById('merged-table-container-test').style.display = 'block';
     document.getElementById('separate-tables-container-test').style.display = 'none';
     generateMergedTableTest();
   } else {

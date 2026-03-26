@@ -809,8 +809,19 @@
 
       .table-container {
         margin-bottom: 2rem;
-        display: flex;
-        justify-content: center;
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .table-container > div {
+        min-width: max-content;
+      }
+
+      .table-container table {
+        min-width: max-content;
       }
       
       :root {
