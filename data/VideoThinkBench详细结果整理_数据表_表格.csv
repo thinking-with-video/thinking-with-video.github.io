@@ -130,58 +130,58 @@ VGM (TI2V),MiniMax-Hailuo-2.3,Text-Centric,Multimodal Math Reasoning,MathVista,L
 VGM (TI2V),MiniMax-Hailuo-2.3,Text-Centric,Multimodal Math Reasoning,MathVision,Last Frame,10%
 VGM (TI2V),MiniMax-Hailuo-2.3,Text-Centric,Multimodal General Knowledge Reasoning,MMBench,Last Frame,30%
 VGM (TI2V),MiniMax-Hailuo-2.3,Text-Centric,Multimodal General Knowledge Reasoning,MMMU,Last Frame,20%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only Math Reasoning,GSM8K,Last Frame,80%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only Math Reasoning,GSM8K,Audio,93.33%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only Math Reasoning,GSM8K,V ∩ A,80%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only Math Reasoning,GSM8K,V ∪ A,93.33%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only Math Reasoning,MATH-500,Last Frame,70%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only Math Reasoning,MATH-500,Audio,80%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only Math Reasoning,MATH-500,V ∩ A,55%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only Math Reasoning,MATH-500,V ∪ A,95%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only Math Reasoning,AIME24,Last Frame,50%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only Math Reasoning,AIME24,Audio,50%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only Math Reasoning,AIME24,V ∩ A,40%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only Math Reasoning,AIME24,V ∪ A,50%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only Math Reasoning,AIME25,Last Frame,20%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only Math Reasoning,AIME25,Audio,20%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only Math Reasoning,AIME25,V ∩ A,20%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only Math Reasoning,AIME25,V ∪ A,20%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only General Knowledge Reasoning,BBH,Last Frame,61.54%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only General Knowledge Reasoning,BBH,Audio,61.54%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only General Knowledge Reasoning,BBH,V ∩ A,53.85%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only General Knowledge Reasoning,BBH,V ∪ A,61.54%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only General Knowledge Reasoning,MMLU,Last Frame,16.67%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only General Knowledge Reasoning,MMLU,Audio,41.67%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only General Knowledge Reasoning,MMLU,V ∩ A,16.67%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only General Knowledge Reasoning,MMLU,V ∪ A,50%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only General Knowledge Reasoning,MMLU-Pro,Last Frame,Untested
-VGM (TI2VA),Veo3,Text-Centric,Text-Only General Knowledge Reasoning,MMLU-Pro,Audio,Untested
-VGM (TI2VA),Veo3,Text-Centric,Text-Only General Knowledge Reasoning,MMLU-Pro,V ∩ A,Untested
-VGM (TI2VA),Veo3,Text-Centric,Text-Only General Knowledge Reasoning,MMLU-Pro,V ∪ A,Untested
-VGM (TI2VA),Veo3,Text-Centric,Text-Only General Knowledge Reasoning,GPQA,Last Frame,52%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only General Knowledge Reasoning,GPQA,Audio,40%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only General Knowledge Reasoning,GPQA,V ∩ A,32%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only General Knowledge Reasoning,GPQA,V ∪ A,56%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only General Knowledge Reasoning,SuperGPQA,Last Frame,42.86%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only General Knowledge Reasoning,SuperGPQA,Audio,51.43%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only General Knowledge Reasoning,SuperGPQA,V ∩ A,40%
-VGM (TI2VA),Veo3,Text-Centric,Text-Only General Knowledge Reasoning,SuperGPQA,V ∪ A,57.14%
-VGM (TI2VA),Veo3,Text-Centric,Multimodal Math Reasoning,MathVista,Last Frame,50%
-VGM (TI2VA),Veo3,Text-Centric,Multimodal Math Reasoning,MathVista,Audio,25%
-VGM (TI2VA),Veo3,Text-Centric,Multimodal Math Reasoning,MathVista,V ∩ A,25%
-VGM (TI2VA),Veo3,Text-Centric,Multimodal Math Reasoning,MathVista,V ∪ A,55%
-VGM (TI2VA),Veo3,Text-Centric,Multimodal Math Reasoning,MathVision,Last Frame,45%
-VGM (TI2VA),Veo3,Text-Centric,Multimodal Math Reasoning,MathVision,Audio,5%
-VGM (TI2VA),Veo3,Text-Centric,Multimodal Math Reasoning,MathVision,V ∩ A,0%
-VGM (TI2VA),Veo3,Text-Centric,Multimodal Math Reasoning,MathVision,V ∪ A,50%
-VGM (TI2VA),Veo3,Text-Centric,Multimodal General Knowledge Reasoning,MMBench,Last Frame,35%
-VGM (TI2VA),Veo3,Text-Centric,Multimodal General Knowledge Reasoning,MMBench,Audio,20%
-VGM (TI2VA),Veo3,Text-Centric,Multimodal General Knowledge Reasoning,MMBench,V ∩ A,15%
-VGM (TI2VA),Veo3,Text-Centric,Multimodal General Knowledge Reasoning,MMBench,V ∪ A,65%
-VGM (TI2VA),Veo3,Text-Centric,Multimodal General Knowledge Reasoning,MMMU,Last Frame,45%
-VGM (TI2VA),Veo3,Text-Centric,Multimodal General Knowledge Reasoning,MMMU,Audio,10%
-VGM (TI2VA),Veo3,Text-Centric,Multimodal General Knowledge Reasoning,MMMU,V ∩ A,5%
-VGM (TI2VA),Veo3,Text-Centric,Multimodal General Knowledge Reasoning,MMMU,V ∪ A,50%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only Math Reasoning,GSM8K,Last Frame,80%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only Math Reasoning,GSM8K,Audio,93.33%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only Math Reasoning,GSM8K,V ∩ A,80%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only Math Reasoning,GSM8K,V ∪ A,93.33%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only Math Reasoning,MATH-500,Last Frame,70%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only Math Reasoning,MATH-500,Audio,80%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only Math Reasoning,MATH-500,V ∩ A,55%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only Math Reasoning,MATH-500,V ∪ A,95%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only Math Reasoning,AIME24,Last Frame,50%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only Math Reasoning,AIME24,Audio,50%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only Math Reasoning,AIME24,V ∩ A,40%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only Math Reasoning,AIME24,V ∪ A,50%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only Math Reasoning,AIME25,Last Frame,20%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only Math Reasoning,AIME25,Audio,20%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only Math Reasoning,AIME25,V ∩ A,20%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only Math Reasoning,AIME25,V ∪ A,20%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only General Knowledge Reasoning,BBH,Last Frame,61.54%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only General Knowledge Reasoning,BBH,Audio,61.54%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only General Knowledge Reasoning,BBH,V ∩ A,53.85%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only General Knowledge Reasoning,BBH,V ∪ A,61.54%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only General Knowledge Reasoning,MMLU,Last Frame,16.67%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only General Knowledge Reasoning,MMLU,Audio,41.67%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only General Knowledge Reasoning,MMLU,V ∩ A,16.67%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only General Knowledge Reasoning,MMLU,V ∪ A,50%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only General Knowledge Reasoning,MMLU-Pro,Last Frame,60.0%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only General Knowledge Reasoning,MMLU-Pro,Audio,80.0%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only General Knowledge Reasoning,MMLU-Pro,V ∩ A,53.3%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only General Knowledge Reasoning,MMLU-Pro,V ∪ A,86.7%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only General Knowledge Reasoning,GPQA,Last Frame,52%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only General Knowledge Reasoning,GPQA,Audio,40%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only General Knowledge Reasoning,GPQA,V ∩ A,32%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only General Knowledge Reasoning,GPQA,V ∪ A,56%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only General Knowledge Reasoning,SuperGPQA,Last Frame,42.86%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only General Knowledge Reasoning,SuperGPQA,Audio,51.43%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only General Knowledge Reasoning,SuperGPQA,V ∩ A,40%
+VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only General Knowledge Reasoning,SuperGPQA,V ∪ A,57.14%
+VGM (TI2VA),Veo 3.1,Text-Centric,Multimodal Math Reasoning,MathVista,Last Frame,50%
+VGM (TI2VA),Veo 3.1,Text-Centric,Multimodal Math Reasoning,MathVista,Audio,25%
+VGM (TI2VA),Veo 3.1,Text-Centric,Multimodal Math Reasoning,MathVista,V ∩ A,25%
+VGM (TI2VA),Veo 3.1,Text-Centric,Multimodal Math Reasoning,MathVista,V ∪ A,55%
+VGM (TI2VA),Veo 3.1,Text-Centric,Multimodal Math Reasoning,MathVision,Last Frame,45%
+VGM (TI2VA),Veo 3.1,Text-Centric,Multimodal Math Reasoning,MathVision,Audio,5%
+VGM (TI2VA),Veo 3.1,Text-Centric,Multimodal Math Reasoning,MathVision,V ∩ A,0%
+VGM (TI2VA),Veo 3.1,Text-Centric,Multimodal Math Reasoning,MathVision,V ∪ A,50%
+VGM (TI2VA),Veo 3.1,Text-Centric,Multimodal General Knowledge Reasoning,MMBench,Last Frame,35%
+VGM (TI2VA),Veo 3.1,Text-Centric,Multimodal General Knowledge Reasoning,MMBench,Audio,20%
+VGM (TI2VA),Veo 3.1,Text-Centric,Multimodal General Knowledge Reasoning,MMBench,V ∩ A,15%
+VGM (TI2VA),Veo 3.1,Text-Centric,Multimodal General Knowledge Reasoning,MMBench,V ∪ A,65%
+VGM (TI2VA),Veo 3.1,Text-Centric,Multimodal General Knowledge Reasoning,MMMU,Last Frame,45%
+VGM (TI2VA),Veo 3.1,Text-Centric,Multimodal General Knowledge Reasoning,MMMU,Audio,10%
+VGM (TI2VA),Veo 3.1,Text-Centric,Multimodal General Knowledge Reasoning,MMMU,V ∩ A,5%
+VGM (TI2VA),Veo 3.1,Text-Centric,Multimodal General Knowledge Reasoning,MMMU,V ∪ A,50%
 VGM (TI2VA),MOVA-360p,Text-Centric,Text-Only Math Reasoning,GSM8K,Last Frame,20%
 VGM (TI2VA),MOVA-360p,Text-Centric,Text-Only Math Reasoning,GSM8K,Audio,0%
 VGM (TI2VA),MOVA-360p,Text-Centric,Text-Only Math Reasoning,GSM8K,V ∩ A,0%
@@ -299,3 +299,4 @@ UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Multimodal Math Reasoning,MathVis
 UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Multimodal Math Reasoning,MathVision,Accuracy,40%
 UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Multimodal General Knowledge Reasoning,MMBench,Accuracy,10%
 UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Multimodal General Knowledge Reasoning,MMMU,Accuracy,20%
+
