@@ -29,7 +29,7 @@ var video_gen_scores_minitest = {
     "Maze Labyrinth": 0.0
   },
   "3": {
-    "Model": "MiniMax-Hailuo-2.3",
+    "Model": "MiniMax Hailuo 2.3",
     "Average": 25.85,
     "Eyeballing Point": 36.67,
     "Eyeballing Line": 34.29,
@@ -334,7 +334,7 @@ var video_gen_text_centric_scores_minitest = {
     "MMMU": 10.0
   },
   "5": {
-    "Model": "MiniMax-Hailuo-2.3",
+    "Model": "MiniMax Hailuo 2.3",
     "Average": 38.44,
     "GSM8K": 76.6,
     "MATH-500": 40.0,
@@ -648,4 +648,5 @@ var vision_lang_text_centric_scores_minitest = {
     "MMMU": 65.0
   }
 };
+
 

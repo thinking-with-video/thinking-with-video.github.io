@@ -117,19 +117,19 @@ VGM (TI2V),Seedance 1.0 Pro,Text-Centric,Multimodal Math Reasoning,MathVista,Las
 VGM (TI2V),Seedance 1.0 Pro,Text-Centric,Multimodal Math Reasoning,MathVision,Last Frame,0%
 VGM (TI2V),Seedance 1.0 Pro,Text-Centric,Multimodal General Knowledge Reasoning,MMBench,Last Frame,0%
 VGM (TI2V),Seedance 1.0 Pro,Text-Centric,Multimodal General Knowledge Reasoning,MMMU,Last Frame,0%
-VGM (TI2V),MiniMax-Hailuo-2.3,Text-Centric,Text-Only Math Reasoning,GSM8K,Last Frame,76.6%
-VGM (TI2V),MiniMax-Hailuo-2.3,Text-Centric,Text-Only Math Reasoning,MATH-500,Last Frame,40%
-VGM (TI2V),MiniMax-Hailuo-2.3,Text-Centric,Text-Only Math Reasoning,AIME24,Last Frame,10%
-VGM (TI2V),MiniMax-Hailuo-2.3,Text-Centric,Text-Only Math Reasoning,AIME25,Last Frame,20%
-VGM (TI2V),MiniMax-Hailuo-2.3,Text-Centric,Text-Only General Knowledge Reasoning,BBH,Last Frame,61.5%
-VGM (TI2V),MiniMax-Hailuo-2.3,Text-Centric,Text-Only General Knowledge Reasoning,MMLU,Last Frame,33.3%
-VGM (TI2V),MiniMax-Hailuo-2.3,Text-Centric,Text-Only General Knowledge Reasoning,MMLU-Pro,Last Frame,86.6%
-VGM (TI2V),MiniMax-Hailuo-2.3,Text-Centric,Text-Only General Knowledge Reasoning,GPQA,Last Frame,16%
-VGM (TI2V),MiniMax-Hailuo-2.3,Text-Centric,Text-Only General Knowledge Reasoning,SuperGPQA,Last Frame,65.71%
-VGM (TI2V),MiniMax-Hailuo-2.3,Text-Centric,Multimodal Math Reasoning,MathVista,Last Frame,30%
-VGM (TI2V),MiniMax-Hailuo-2.3,Text-Centric,Multimodal Math Reasoning,MathVision,Last Frame,10%
-VGM (TI2V),MiniMax-Hailuo-2.3,Text-Centric,Multimodal General Knowledge Reasoning,MMBench,Last Frame,30%
-VGM (TI2V),MiniMax-Hailuo-2.3,Text-Centric,Multimodal General Knowledge Reasoning,MMMU,Last Frame,20%
+VGM (TI2V),MiniMax Hailuo 2.3,Text-Centric,Text-Only Math Reasoning,GSM8K,Last Frame,76.6%
+VGM (TI2V),MiniMax Hailuo 2.3,Text-Centric,Text-Only Math Reasoning,MATH-500,Last Frame,40%
+VGM (TI2V),MiniMax Hailuo 2.3,Text-Centric,Text-Only Math Reasoning,AIME24,Last Frame,10%
+VGM (TI2V),MiniMax Hailuo 2.3,Text-Centric,Text-Only Math Reasoning,AIME25,Last Frame,20%
+VGM (TI2V),MiniMax Hailuo 2.3,Text-Centric,Text-Only General Knowledge Reasoning,BBH,Last Frame,61.5%
+VGM (TI2V),MiniMax Hailuo 2.3,Text-Centric,Text-Only General Knowledge Reasoning,MMLU,Last Frame,33.3%
+VGM (TI2V),MiniMax Hailuo 2.3,Text-Centric,Text-Only General Knowledge Reasoning,MMLU-Pro,Last Frame,86.6%
+VGM (TI2V),MiniMax Hailuo 2.3,Text-Centric,Text-Only General Knowledge Reasoning,GPQA,Last Frame,16%
+VGM (TI2V),MiniMax Hailuo 2.3,Text-Centric,Text-Only General Knowledge Reasoning,SuperGPQA,Last Frame,65.71%
+VGM (TI2V),MiniMax Hailuo 2.3,Text-Centric,Multimodal Math Reasoning,MathVista,Last Frame,30%
+VGM (TI2V),MiniMax Hailuo 2.3,Text-Centric,Multimodal Math Reasoning,MathVision,Last Frame,10%
+VGM (TI2V),MiniMax Hailuo 2.3,Text-Centric,Multimodal General Knowledge Reasoning,MMBench,Last Frame,30%
+VGM (TI2V),MiniMax Hailuo 2.3,Text-Centric,Multimodal General Knowledge Reasoning,MMMU,Last Frame,20%
 VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only Math Reasoning,GSM8K,Last Frame,80%
 VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only Math Reasoning,GSM8K,Audio,93.33%
 VGM (TI2VA),Veo 3.1,Text-Centric,Text-Only Math Reasoning,GSM8K,V ∩ A,80%
@@ -299,5 +299,6 @@ UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Multimodal Math Reasoning,MathVis
 UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Multimodal Math Reasoning,MathVision,Accuracy,40%
 UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Multimodal General Knowledge Reasoning,MMBench,Accuracy,10%
 UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Multimodal General Knowledge Reasoning,MMMU,Accuracy,20%
+
 
 
