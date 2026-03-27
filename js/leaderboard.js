@@ -1,4 +1,4 @@
-// Configuration for MINITEST: Set to true to merge tables, false to show separately
+﻿// Configuration for MINITEST: Set to true to merge tables, false to show separately
 var MERGE_LEADERBOARD_TABLES_MINITEST = false;
 
 // Configuration for MINITEST: Set to true to highlight top 3 models with medals and red text
@@ -150,7 +150,7 @@ function generateVideoGenTable() {
           <td class="js-sort-number"><strong>ARC&nbsp;AGI&nbsp;2</strong></td>
           <td class="js-sort-number"><strong>Maze Square</strong></td>
           <td class="js-sort-number"><strong>Maze Hexagon</strong></td>
-          <td class="js-sort-number"><strong>Maze Labyrinth</strong></td>
+          <td class="js-sort-number"><strong>Maze Circle</strong></td>
       </tr></thead><tbody>`;
 
   var keys = Object.keys(data);
@@ -215,7 +215,7 @@ function generateImageGenTable() {
           <td class="js-sort-number"><strong>ARC&nbsp;AGI&nbsp;2</strong></td>
           <td class="js-sort-number"><strong>Maze Square</strong></td>
           <td class="js-sort-number"><strong>Maze Hexagon</strong></td>
-          <td class="js-sort-number"><strong>Maze Labyrinth</strong></td>
+          <td class="js-sort-number"><strong>Maze Circle</strong></td>
       </tr></thead><tbody>`;
 
   var keys = Object.keys(data);
@@ -280,7 +280,7 @@ function generateVisionLangTable() {
           <td class="js-sort-number"><strong>ARC&nbsp;AGI&nbsp;2</strong></td>
           <td class="js-sort-number"><strong>Maze Square</strong></td>
           <td class="js-sort-number"><strong>Maze Hexagon</strong></td>
-          <td class="js-sort-number"><strong>Maze Labyrinth</strong></td>
+          <td class="js-sort-number"><strong>Maze Circle</strong></td>
       </tr></thead><tbody>`;
 
   var keys = Object.keys(data);
@@ -489,7 +489,7 @@ function generateMergedTableTest() {
           <td class="js-sort-number"><strong>ARC&nbsp;AGI&nbsp;2</strong></td>
           <td class="js-sort-number"><strong>Maze Square</strong></td>
           <td class="js-sort-number"><strong>Maze Hexagon</strong></td>
-          <td class="js-sort-number"><strong>Maze Labyrinth</strong></td>
+          <td class="js-sort-number"><strong>Maze Circle</strong></td>
       </tr></thead><tbody>`;
   
   // Generate rows
@@ -554,7 +554,7 @@ function generateVideoGenTableTest() {
           <td class="js-sort-number"><strong>ARC&nbsp;AGI&nbsp;2</strong></td>
           <td class="js-sort-number"><strong>Maze Square</strong></td>
           <td class="js-sort-number"><strong>Maze Hexagon</strong></td>
-          <td class="js-sort-number"><strong>Maze Labyrinth</strong></td>
+          <td class="js-sort-number"><strong>Maze Circle</strong></td>
       </tr></thead><tbody>`;
 
   var keys = Object.keys(data);
@@ -619,7 +619,7 @@ function generateImageGenTableTest() {
           <td class="js-sort-number"><strong>ARC&nbsp;AGI&nbsp;2</strong></td>
           <td class="js-sort-number"><strong>Maze Square</strong></td>
           <td class="js-sort-number"><strong>Maze Hexagon</strong></td>
-          <td class="js-sort-number"><strong>Maze Labyrinth</strong></td>
+          <td class="js-sort-number"><strong>Maze Circle</strong></td>
       </tr></thead><tbody>`;
 
   var keys = Object.keys(data);
@@ -684,7 +684,7 @@ function generateVisionLangTableTest() {
           <td class="js-sort-number"><strong>ARC&nbsp;AGI&nbsp;2</strong></td>
           <td class="js-sort-number"><strong>Maze Square</strong></td>
           <td class="js-sort-number"><strong>Maze Hexagon</strong></td>
-          <td class="js-sort-number"><strong>Maze Labyrinth</strong></td>
+          <td class="js-sort-number"><strong>Maze Circle</strong></td>
       </tr></thead><tbody>`;
 
   var keys = Object.keys(data);
