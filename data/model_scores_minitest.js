@@ -1,4 +1,4 @@
-// Video Generation Models Scores
+﻿// Video Generation Models Scores
 var video_gen_scores_minitest = {
   "1": {
     "Model": "Sora 2",
@@ -57,7 +57,7 @@ var video_gen_scores_minitest = {
     "Maze Labyrinth": 0.0
   },
   "5": {
-    "Model": "Doubao-Seedance-1-0-Pro-250528",
+    "Model": "Seedance 1.0 Pro",
     "Average": 12.4,
     "Eyeballing Point": 22.22,
     "Eyeballing Line": 24.29,
@@ -103,8 +103,8 @@ var video_gen_scores_minitest = {
 // Image Generation Models Scores
 var image_gen_scores_minitest = {
   "1": {
-    "Model": "Nano Banana 2",
-    // "Model": "Gemini 3 Pro Image (Nano Banana 2)",
+    "Model": "Nano Banana Pro",
+    // "Model": "Gemini 3 Pro Image (Nano Banana Pro)",
     "Average": 29.8,
     "Eyeballing Point": 24,
     "Eyeballing Line": 30,
@@ -206,7 +206,7 @@ var vision_lang_scores_minitest = {
     "Maze Labyrinth": 0.0
   },
   "3": {
-    "Model": "GPT5 high",
+    "Model": "GPT-5 high",
     "Average": 35.5,
     "Eyeballing Point": 39,
     "Eyeballing Line": 30,
@@ -266,7 +266,7 @@ var vision_lang_scores_minitest = {
 // Text-Centric Minitest Scores - Video Generation Models
 var video_gen_text_centric_scores_minitest = {
   "1": {
-    "Model": "Sora-2 (Audio)",
+    "Model": "Sora 2 (Audio)",
     "Average": 67.8,
     "GSM8K": 98.9,
     "MATH-500": 92.0,
@@ -283,7 +283,7 @@ var video_gen_text_centric_scores_minitest = {
     "MMMU": 69.2
   },
   "2": {
-    "Model": "Sora-2 (Last Frame)",
+    "Model": "Sora 2 (Last Frame)",
     "Average": 57.0,
     "GSM8K": 75.7,
     "MATH-500": 67.0,
@@ -419,7 +419,7 @@ var video_gen_text_centric_scores_minitest = {
     "MMMU": 0.0
   },
   "10": {
-    "Model": "Doubao-Seedance-1-0-Pro-250528",
+    "Model": "Seedance 1.0 Pro",
     "Average": 0.0,
     "GSM8K": 0.0,
     "MATH-500": 0.0,
@@ -457,7 +457,7 @@ var video_gen_text_centric_scores_minitest = {
 // Text-Centric Minitest Scores - Image Generation Models
 var image_gen_text_centric_scores_minitest = {
   "1": {
-    "Model": "Nano Banana 2",
+    "Model": "Nano Banana Pro",
     "Average": 65.98,
     "GSM8K": 56.67,
     "MATH-500": 65.0,
@@ -546,7 +546,7 @@ var image_gen_text_centric_scores_minitest = {
 // Text-Centric Minitest Scores - Vision-Language Models
 var vision_lang_text_centric_scores_minitest = {
   "1": {
-    "Model": "GPT5 high",
+    "Model": "GPT-5 high",
     "Average": 85.8,
     "GSM8K": 100.0,
     "MATH-500": 99.0,
@@ -648,3 +648,4 @@ var vision_lang_text_centric_scores_minitest = {
     "MMMU": 65.0
   }
 };
+

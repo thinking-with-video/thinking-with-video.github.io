@@ -1,4 +1,4 @@
-// Video Generation Models Scores (Test)
+﻿// Video Generation Models Scores (Test)
 var video_gen_scores_test = {
   "1": {
     "Model": "Sora 2",
@@ -37,7 +37,7 @@ var vision_lang_scores_test = {
     "Maze Labyrinth": 0.0
   },
   "2": {
-    "Model": "GPT5 high",
+    "Model": "GPT-5 high",
     "Average": 34.1,
     "Eyeballing Point": 34,
     "Eyeballing Line": 24,
@@ -65,3 +65,4 @@ var vision_lang_scores_test = {
     "Maze Labyrinth": 0.0
   }
 };
+

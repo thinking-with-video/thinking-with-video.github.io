@@ -52,19 +52,19 @@ IGM (TI2I),GPT Image 1.5,Text-Centric,Multimodal Math Reasoning,MathVista,Accura
 IGM (TI2I),GPT Image 1.5,Text-Centric,Multimodal Math Reasoning,MathVision,Accuracy,40%
 IGM (TI2I),GPT Image 1.5,Text-Centric,Multimodal General Knowledge Reasoning,MMBench,Accuracy,65%
 IGM (TI2I),GPT Image 1.5,Text-Centric,Multimodal General Knowledge Reasoning,MMMU,Accuracy,50%
-IGM (TI2I),Nano Banana 2,Text-Centric,Text-Only Math Reasoning,GSM8K,Accuracy,56.67%
-IGM (TI2I),Nano Banana 2,Text-Centric,Text-Only Math Reasoning,MATH-500,Accuracy,65%
-IGM (TI2I),Nano Banana 2,Text-Centric,Text-Only Math Reasoning,AIME24,Accuracy,80%
-IGM (TI2I),Nano Banana 2,Text-Centric,Text-Only Math Reasoning,AIME25,Accuracy,80%
-IGM (TI2I),Nano Banana 2,Text-Centric,Text-Only General Knowledge Reasoning,BBH,Accuracy,69.23%
-IGM (TI2I),Nano Banana 2,Text-Centric,Text-Only General Knowledge Reasoning,MMLU,Accuracy,75%
-IGM (TI2I),Nano Banana 2,Text-Centric,Text-Only General Knowledge Reasoning,MMLU-Pro,Accuracy,80%
-IGM (TI2I),Nano Banana 2,Text-Centric,Text-Only General Knowledge Reasoning,GPQA,Accuracy,44%
-IGM (TI2I),Nano Banana 2,Text-Centric,Text-Only General Knowledge Reasoning,SuperGPQA,Accuracy,62.86%
-IGM (TI2I),Nano Banana 2,Text-Centric,Multimodal Math Reasoning,MathVista,Accuracy,75%
-IGM (TI2I),Nano Banana 2,Text-Centric,Multimodal Math Reasoning,MathVision,Accuracy,45%
-IGM (TI2I),Nano Banana 2,Text-Centric,Multimodal General Knowledge Reasoning,MMBench,Accuracy,75%
-IGM (TI2I),Nano Banana 2,Text-Centric,Multimodal General Knowledge Reasoning,MMMU,Accuracy,50%
+IGM (TI2I),Nano Banana Pro,Text-Centric,Text-Only Math Reasoning,GSM8K,Accuracy,56.67%
+IGM (TI2I),Nano Banana Pro,Text-Centric,Text-Only Math Reasoning,MATH-500,Accuracy,65%
+IGM (TI2I),Nano Banana Pro,Text-Centric,Text-Only Math Reasoning,AIME24,Accuracy,80%
+IGM (TI2I),Nano Banana Pro,Text-Centric,Text-Only Math Reasoning,AIME25,Accuracy,80%
+IGM (TI2I),Nano Banana Pro,Text-Centric,Text-Only General Knowledge Reasoning,BBH,Accuracy,69.23%
+IGM (TI2I),Nano Banana Pro,Text-Centric,Text-Only General Knowledge Reasoning,MMLU,Accuracy,75%
+IGM (TI2I),Nano Banana Pro,Text-Centric,Text-Only General Knowledge Reasoning,MMLU-Pro,Accuracy,80%
+IGM (TI2I),Nano Banana Pro,Text-Centric,Text-Only General Knowledge Reasoning,GPQA,Accuracy,44%
+IGM (TI2I),Nano Banana Pro,Text-Centric,Text-Only General Knowledge Reasoning,SuperGPQA,Accuracy,62.86%
+IGM (TI2I),Nano Banana Pro,Text-Centric,Multimodal Math Reasoning,MathVista,Accuracy,75%
+IGM (TI2I),Nano Banana Pro,Text-Centric,Multimodal Math Reasoning,MathVision,Accuracy,45%
+IGM (TI2I),Nano Banana Pro,Text-Centric,Multimodal General Knowledge Reasoning,MMBench,Accuracy,75%
+IGM (TI2I),Nano Banana Pro,Text-Centric,Multimodal General Knowledge Reasoning,MMMU,Accuracy,50%
 IGM (TI2I),Seedream 4.5,Text-Centric,Text-Only Math Reasoning,GSM8K,Accuracy,100%
 IGM (TI2I),Seedream 4.5,Text-Centric,Text-Only Math Reasoning,MATH-500,Accuracy,80%
 IGM (TI2I),Seedream 4.5,Text-Centric,Text-Only Math Reasoning,AIME24,Accuracy,20%
@@ -104,19 +104,19 @@ VGM (TI2V),Wan2.2-TI2V-5B,Text-Centric,Multimodal Math Reasoning,MathVista,Last 
 VGM (TI2V),Wan2.2-TI2V-5B,Text-Centric,Multimodal Math Reasoning,MathVision,Last Frame,0%
 VGM (TI2V),Wan2.2-TI2V-5B,Text-Centric,Multimodal General Knowledge Reasoning,MMBench,Last Frame,0%
 VGM (TI2V),Wan2.2-TI2V-5B,Text-Centric,Multimodal General Knowledge Reasoning,MMMU,Last Frame,0%
-VGM (TI2V),Doubao-Seedance-1-0-Pro-250528,Text-Centric,Text-Only Math Reasoning,GSM8K,Last Frame,0%
-VGM (TI2V),Doubao-Seedance-1-0-Pro-250528,Text-Centric,Text-Only Math Reasoning,MATH-500,Last Frame,0%
-VGM (TI2V),Doubao-Seedance-1-0-Pro-250528,Text-Centric,Text-Only Math Reasoning,AIME24,Last Frame,0%
-VGM (TI2V),Doubao-Seedance-1-0-Pro-250528,Text-Centric,Text-Only Math Reasoning,AIME25,Last Frame,0%
-VGM (TI2V),Doubao-Seedance-1-0-Pro-250528,Text-Centric,Text-Only General Knowledge Reasoning,BBH,Last Frame,0%
-VGM (TI2V),Doubao-Seedance-1-0-Pro-250528,Text-Centric,Text-Only General Knowledge Reasoning,MMLU,Last Frame,0%
-VGM (TI2V),Doubao-Seedance-1-0-Pro-250528,Text-Centric,Text-Only General Knowledge Reasoning,MMLU-Pro,Last Frame,0%
-VGM (TI2V),Doubao-Seedance-1-0-Pro-250528,Text-Centric,Text-Only General Knowledge Reasoning,GPQA,Last Frame,0%
-VGM (TI2V),Doubao-Seedance-1-0-Pro-250528,Text-Centric,Text-Only General Knowledge Reasoning,SuperGPQA,Last Frame,0%
-VGM (TI2V),Doubao-Seedance-1-0-Pro-250528,Text-Centric,Multimodal Math Reasoning,MathVista,Last Frame,0%
-VGM (TI2V),Doubao-Seedance-1-0-Pro-250528,Text-Centric,Multimodal Math Reasoning,MathVision,Last Frame,0%
-VGM (TI2V),Doubao-Seedance-1-0-Pro-250528,Text-Centric,Multimodal General Knowledge Reasoning,MMBench,Last Frame,0%
-VGM (TI2V),Doubao-Seedance-1-0-Pro-250528,Text-Centric,Multimodal General Knowledge Reasoning,MMMU,Last Frame,0%
+VGM (TI2V),Seedance 1.0 Pro,Text-Centric,Text-Only Math Reasoning,GSM8K,Last Frame,0%
+VGM (TI2V),Seedance 1.0 Pro,Text-Centric,Text-Only Math Reasoning,MATH-500,Last Frame,0%
+VGM (TI2V),Seedance 1.0 Pro,Text-Centric,Text-Only Math Reasoning,AIME24,Last Frame,0%
+VGM (TI2V),Seedance 1.0 Pro,Text-Centric,Text-Only Math Reasoning,AIME25,Last Frame,0%
+VGM (TI2V),Seedance 1.0 Pro,Text-Centric,Text-Only General Knowledge Reasoning,BBH,Last Frame,0%
+VGM (TI2V),Seedance 1.0 Pro,Text-Centric,Text-Only General Knowledge Reasoning,MMLU,Last Frame,0%
+VGM (TI2V),Seedance 1.0 Pro,Text-Centric,Text-Only General Knowledge Reasoning,MMLU-Pro,Last Frame,0%
+VGM (TI2V),Seedance 1.0 Pro,Text-Centric,Text-Only General Knowledge Reasoning,GPQA,Last Frame,0%
+VGM (TI2V),Seedance 1.0 Pro,Text-Centric,Text-Only General Knowledge Reasoning,SuperGPQA,Last Frame,0%
+VGM (TI2V),Seedance 1.0 Pro,Text-Centric,Multimodal Math Reasoning,MathVista,Last Frame,0%
+VGM (TI2V),Seedance 1.0 Pro,Text-Centric,Multimodal Math Reasoning,MathVision,Last Frame,0%
+VGM (TI2V),Seedance 1.0 Pro,Text-Centric,Multimodal General Knowledge Reasoning,MMBench,Last Frame,0%
+VGM (TI2V),Seedance 1.0 Pro,Text-Centric,Multimodal General Knowledge Reasoning,MMMU,Last Frame,0%
 VGM (TI2V),MiniMax-Hailuo-2.3,Text-Centric,Text-Only Math Reasoning,GSM8K,Last Frame,76.6%
 VGM (TI2V),MiniMax-Hailuo-2.3,Text-Centric,Text-Only Math Reasoning,MATH-500,Last Frame,40%
 VGM (TI2V),MiniMax-Hailuo-2.3,Text-Centric,Text-Only Math Reasoning,AIME24,Last Frame,10%
@@ -299,4 +299,5 @@ UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Multimodal Math Reasoning,MathVis
 UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Multimodal Math Reasoning,MathVision,Accuracy,40%
 UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Multimodal General Knowledge Reasoning,MMBench,Accuracy,10%
 UMGM (TI2TI),BAGEL (Image Output),Text-Centric,Multimodal General Knowledge Reasoning,MMMU,Accuracy,20%
+
 
