@@ -375,7 +375,8 @@ table#text-centric-results-test.js-sort-11 tbody tr td:nth-child(12),
 table#text-centric-results-test.js-sort-12 tbody tr td:nth-child(13),
 table#text-centric-results-test.js-sort-13 tbody tr td:nth-child(14),
 table#text-centric-results-test.js-sort-14 tbody tr td:nth-child(15),
-table#text-centric-results-test.js-sort-15 tbody tr td:nth-child(16) {
+table#text-centric-results-test.js-sort-15 tbody tr td:nth-child(16),
+table#text-centric-results-test.js-sort-16 tbody tr td:nth-child(17) {
     background: #dee;
 }
 
@@ -410,6 +411,10 @@ table#text-centric-results-test.js-sort-15 tbody tr td:nth-child(16) {
 }
 
 #text-centric-results-test td:nth-child(2) {
+    white-space: nowrap;
+}
+
+#text-centric-results-test td:nth-child(3) {
     white-space: nowrap;
 }
 

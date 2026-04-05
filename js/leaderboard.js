@@ -754,6 +754,7 @@ function generateTextCentricTestTable() {
   table += '<thead><tr>';
   table += '<td class="js-sort-number"><strong>#</strong></td>';
   table += '<td class="js-sort"><strong>Model</strong></td>';
+  table += '<td class="js-sort"><strong>Model Type</strong></td>';
   table += '<td class="js-sort-number"><strong><u>Average</u></strong></td>';
 
   for (var i = 0; i < TEXT_CENTRIC_SUBSETS_TEST.length; i++) {
@@ -777,9 +778,11 @@ function generateTextCentricTestTable() {
     table += '<td>' + key + '</td>';
     if (HIGHLIGHT_TOP_MODELS_TEST && topRanks.includes(key)) {
       table += '<td><b class="best-score-text">' + modelName + '</b></td>';
+      table += '<td>' + (entry.ModelType || '-') + '</td>';
       table += '<td><b class="best-score-text">' + formatScoreOneDecimal(entry.Average) + '</b></td>';
     } else {
       table += '<td><b>' + modelName + '</b></td>';
+      table += '<td>' + (entry.ModelType || '-') + '</td>';
       table += '<td><b>' + formatScoreOneDecimal(entry.Average) + '</b></td>';
     }
 

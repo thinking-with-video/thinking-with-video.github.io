@@ -70,6 +70,7 @@ var vision_lang_scores_test = {
 var text_centric_scores_test = {
   "1": {
     "Model": "GPT-5 high",
+    "ModelType": "VLM📃",
     "Average": 85.8,
     "GSM8K": 100.0,
     "MATH-500": 99.0,
@@ -87,6 +88,7 @@ var text_centric_scores_test = {
   },
   "2": {
     "Model": "Gemini 2.5 Pro",
+    "ModelType": "VLM📃",
     "Average": 84.7,
     "GSM8K": 98.9,
     "MATH-500": 99.0,
@@ -104,6 +106,7 @@ var text_centric_scores_test = {
   },
   "3": {
     "Model": "Claude Sonnet 4.5",
+    "ModelType": "VLM📃",
     "Average": 83.7,
     "GSM8K": 100.0,
     "MATH-500": 98.0,
@@ -121,6 +124,7 @@ var text_centric_scores_test = {
   },
   "4": {
     "Model": "Sora 2 (Audio)",
+    "ModelType": "Video🎞️",
     "Average": 67.8,
     "GSM8K": 98.9,
     "MATH-500": 92.0,
@@ -138,6 +142,7 @@ var text_centric_scores_test = {
   },
   "5": {
     "Model": "Sora 2 (Last Frame)",
+    "ModelType": "Video🎞️",
     "Average": 57.0,
     "GSM8K": 75.7,
     "MATH-500": 67.0,
