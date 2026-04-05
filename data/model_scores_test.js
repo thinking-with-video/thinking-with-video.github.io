@@ -66,3 +66,92 @@ var vision_lang_scores_test = {
   }
 };
 
+// Text-Centric Scores (Test, full set)
+var text_centric_scores_test = {
+  "1": {
+    "Model": "GPT-5 high",
+    "Average": 85.8,
+    "GSM8K": 100.0,
+    "MATH-500": 99.0,
+    "AIME24": 95.0,
+    "AIME25": 94.6,
+    "BBH": 94.6,
+    "MMLU": 86.0,
+    "MMLU-Pro": 91.4,
+    "GPQA": 85.7,
+    "SuperGPQA": 68.3,
+    "MathVista": 67.5,
+    "MathVision": 71.6,
+    "MMBench": 84.2,
+    "MMMU": 77.0
+  },
+  "2": {
+    "Model": "Gemini 2.5 Pro",
+    "Average": 84.7,
+    "GSM8K": 98.9,
+    "MATH-500": 99.0,
+    "AIME24": 93.3,
+    "AIME25": 88.0,
+    "BBH": 90.0,
+    "MMLU": 87.7,
+    "MMLU-Pro": 87.1,
+    "GPQA": 86.4,
+    "SuperGPQA": 71.1,
+    "MathVista": 70.0,
+    "MathVision": 63.3,
+    "MMBench": 86.9,
+    "MMMU": 79.0
+  },
+  "3": {
+    "Model": "Claude Sonnet 4.5",
+    "Average": 83.7,
+    "GSM8K": 100.0,
+    "MATH-500": 98.0,
+    "AIME24": 75.0,
+    "AIME25": 87.0,
+    "BBH": 93.8,
+    "MMLU": 89.5,
+    "MMLU-Pro": 95.7,
+    "GPQA": 83.4,
+    "SuperGPQA": 69.0,
+    "MathVista": 72.5,
+    "MathVision": 58.7,
+    "MMBench": 82.5,
+    "MMMU": 82.0
+  },
+  "4": {
+    "Model": "Sora 2 (Audio)",
+    "Average": 67.8,
+    "GSM8K": 98.9,
+    "MATH-500": 92.0,
+    "AIME24": 46.7,
+    "AIME25": 36.7,
+    "BBH": 80.6,
+    "MMLU": 67.3,
+    "MMLU-Pro": 76.5,
+    "GPQA": 57.6,
+    "SuperGPQA": 44.5,
+    "MathVista": 75.7,
+    "MathVision": 46.7,
+    "MMBench": 89.0,
+    "MMMU": 69.2
+  },
+  "5": {
+    "Model": "Sora 2 (Last Frame)",
+    "Average": 57.0,
+    "GSM8K": 75.7,
+    "MATH-500": 67.0,
+    "AIME24": 38.3,
+    "AIME25": 33.3,
+    "BBH": 69.8,
+    "MMLU": 69.1,
+    "MMLU-Pro": 72.0,
+    "GPQA": 51.5,
+    "SuperGPQA": 53.2,
+    "MathVista": 67.6,
+    "MathVision": 44.9,
+    "MMBench": 60.4,
+    "MMMU": 38.3
+  }
+};
+

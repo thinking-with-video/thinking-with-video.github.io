@@ -358,3 +358,65 @@ table#vision-lang-results-text-minitest.js-sort-15 tbody tr td:nth-child(16) {
 #vision-lang-results-text-minitest tr:hover {
     background-color: #ddd;
 }
+
+/* Text-Centric test table */
+table#text-centric-results-test.js-sort-0 tbody tr td:nth-child(1),
+table#text-centric-results-test.js-sort-1 tbody tr td:nth-child(2),
+table#text-centric-results-test.js-sort-2 tbody tr td:nth-child(3),
+table#text-centric-results-test.js-sort-3 tbody tr td:nth-child(4),
+table#text-centric-results-test.js-sort-4 tbody tr td:nth-child(5),
+table#text-centric-results-test.js-sort-5 tbody tr td:nth-child(6),
+table#text-centric-results-test.js-sort-6 tbody tr td:nth-child(7),
+table#text-centric-results-test.js-sort-7 tbody tr td:nth-child(8),
+table#text-centric-results-test.js-sort-8 tbody tr td:nth-child(9),
+table#text-centric-results-test.js-sort-9 tbody tr td:nth-child(10),
+table#text-centric-results-test.js-sort-10 tbody tr td:nth-child(11),
+table#text-centric-results-test.js-sort-11 tbody tr td:nth-child(12),
+table#text-centric-results-test.js-sort-12 tbody tr td:nth-child(13),
+table#text-centric-results-test.js-sort-13 tbody tr td:nth-child(14),
+table#text-centric-results-test.js-sort-14 tbody tr td:nth-child(15),
+table#text-centric-results-test.js-sort-15 tbody tr td:nth-child(16) {
+    background: #dee;
+}
+
+#text-centric-results-test {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-collapse: collapse;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+#text-centric-results-test th {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    background-color: var(--UCLA-darkblue);
+    color: white;
+    white-space: nowrap;
+}
+
+#text-centric-results-test td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+}
+
+#text-centric-results-test td:nth-child(2) {
+    white-space: nowrap;
+}
+
+#text-centric-results-test tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+#text-centric-results-test tr:hover {
+    background-color: #ddd;
+}

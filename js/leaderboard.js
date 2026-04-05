@@ -34,6 +34,22 @@ var TEXT_CENTRIC_SUBSETS_MINITEST = [
   'MMMU'
 ];
 
+var TEXT_CENTRIC_SUBSETS_TEST = [
+  'GSM8K',
+  'MATH-500',
+  'AIME24',
+  'AIME25',
+  'BBH',
+  'MMLU',
+  'MMLU-Pro',
+  'GPQA',
+  'SuperGPQA',
+  'MathVista',
+  'MathVision',
+  'MMBench',
+  'MMMU'
+];
+
 // ==================== MINITEST LEADERBOARD ====================
 
 // Generate merged leaderboard table (minitest)
@@ -419,20 +435,15 @@ window.addEventListener('DOMContentLoaded', function() {
 
   generateTextCentricMinitestTables();
   
-  // Test tables
-  if (MERGE_LEADERBOARD_TABLES_TEST) {
-    // Merged table mode
-    document.getElementById('merged-table-container-test').style.display = getMergedContainerDisplayMode();
-    document.getElementById('separate-tables-container-test').style.display = 'none';
-    generateMergedTableTest();
-  } else {
-    // Separate tables mode
-    document.getElementById('merged-table-container-test').style.display = 'none';
-    document.getElementById('separate-tables-container-test').style.display = 'block';
-    generateVideoGenTableTest();
-    generateImageGenTableTest();
-    generateVisionLangTableTest();
+  // Test tables: keep merged-table presentation only.
+  document.getElementById('merged-table-container-test').style.display = getMergedContainerDisplayMode();
+  var separateTablesTest = document.getElementById('separate-tables-container-test');
+  if (separateTablesTest) {
+    separateTablesTest.style.display = 'none';
   }
+  generateMergedTableTest();
+
+  generateTextCentricTestTable();
 });
 
 // ==================== TEST LEADERBOARD ====================
@@ -728,5 +739,59 @@ function generateVisionLangTableTest() {
   
   table += '</tbody></table>';
   document.getElementById('vision-lang-leaderboard-test').innerHTML = table;
+}
+
+function generateTextCentricTestTable() {
+  var data = text_centric_scores_test;
+  var keys = Object.keys(data);
+
+  if (!keys.length) {
+    document.getElementById('text-centric-leaderboard-test').innerHTML = '<p style="font-size: 1.6rem; margin: 0.6rem 0 1.6rem;">暂无。</p>';
+    return;
+  }
+
+  var table = '<table class="js-sort-table" id="text-centric-results-test">';
+  table += '<thead><tr>';
+  table += '<td class="js-sort-number"><strong>#</strong></td>';
+  table += '<td class="js-sort"><strong>Model</strong></td>';
+  table += '<td class="js-sort-number"><strong><u>Average</u></strong></td>';
+
+  for (var i = 0; i < TEXT_CENTRIC_SUBSETS_TEST.length; i++) {
+    table += '<td class="js-sort-number"><strong>' + TEXT_CENTRIC_SUBSETS_TEST[i] + '</strong></td>';
+  }
+
+  table += '</tr></thead><tbody>';
+
+  var topRanks = ['1', '2', '3'];
+  for (var j = 0; j < keys.length; j++) {
+    var key = keys[j];
+    var entry = data[key];
+    var modelName = entry.Model;
+
+    if (HIGHLIGHT_TOP_MODELS_TEST && topRanks.includes(key)) {
+      var medals = { '1': '🥇', '2': '🥈', '3': '🥉' };
+      modelName = entry.Model + medals[key];
+    }
+
+    table += '<tr>';
+    table += '<td>' + key + '</td>';
+    if (HIGHLIGHT_TOP_MODELS_TEST && topRanks.includes(key)) {
+      table += '<td><b class="best-score-text">' + modelName + '</b></td>';
+      table += '<td><b class="best-score-text">' + formatScoreOneDecimal(entry.Average) + '</b></td>';
+    } else {
+      table += '<td><b>' + modelName + '</b></td>';
+      table += '<td><b>' + formatScoreOneDecimal(entry.Average) + '</b></td>';
+    }
+
+    for (var k = 0; k < TEXT_CENTRIC_SUBSETS_TEST.length; k++) {
+      var subset = TEXT_CENTRIC_SUBSETS_TEST[k];
+      table += '<td>' + formatScoreOneDecimal(entry[subset]) + '</td>';
+    }
+
+    table += '</tr>';
+  }
+
+  table += '</tbody></table>';
+  document.getElementById('text-centric-leaderboard-test').innerHTML = table;
 }
 
