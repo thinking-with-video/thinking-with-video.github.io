@@ -168,14 +168,42 @@
       .affiliations {
         color: var(--text-secondary);
         margin-top: 0.8rem;
-        font-size: 0.95rem;
-        line-height: 1.6;
+        font-size: 0.9rem;
+        line-height: 1.55;
+      }
+
+      .affiliation-line {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        gap: 0.75rem;
+        white-space: nowrap;
+      }
+
+      .affiliation-line + .affiliation-line {
+        margin-top: 0.1rem;
+      }
+
+      .affiliation-item {
+        white-space: nowrap;
       }
 
       .affiliations sup {
         margin: 0 2px;
         color: var(--accent-color);
         font-weight: 600;
+      }
+
+      @media (max-width: 1100px) {
+        .affiliation-line {
+          flex-wrap: wrap;
+          white-space: normal;
+          gap: 0.5rem;
+        }
+
+        .affiliation-item {
+          white-space: normal;
+        }
       }
 
       .symbol-note {
@@ -996,13 +1024,17 @@
           <span>Xipeng Qiu<sup>1,2,3,4,5,†</sup></span>
         </div>
         <div class="affiliations">
-          <sup>1</sup>Institute of Trustworthy Embodied AI, Fudan University&nbsp;&nbsp;
-          <sup>2</sup>Shanghai Innovation Institute&nbsp;&nbsp;
-          <sup>3</sup>Shanghai Key Laboratory of Multimodal Embodied AI<br>
-          <sup>4</sup>College of Computer Science and Artificial Intelligence, Fudan University&nbsp;&nbsp;
-          <sup>5</sup>OpenMOSS Team&nbsp;&nbsp;
-          <sup>6</sup>The Chinese University of Hong Kong&nbsp;&nbsp;
-          <sup>7</sup>Central South University
+          <div class="affiliation-line">
+            <span class="affiliation-item"><sup>1</sup>Institute of Trustworthy Embodied AI, Fudan University</span>
+            <span class="affiliation-item"><sup>2</sup>Shanghai Innovation Institute</span>
+            <span class="affiliation-item"><sup>3</sup>Shanghai Key Laboratory of Multimodal Embodied AI</span>
+          </div>
+          <div class="affiliation-line">
+            <span class="affiliation-item"><sup>4</sup>College of Computer Science and Artificial Intelligence, Fudan University</span>
+            <span class="affiliation-item"><sup>5</sup>OpenMOSS Team</span>
+            <span class="affiliation-item"><sup>6</sup>The Chinese University of Hong Kong</span>
+            <span class="affiliation-item"><sup>7</sup>Central South University</span>
+          </div>
         </div>
         <div class="symbol-note">
             * Core contribution&nbsp;&nbsp;&nbsp;† Corresponding authors
